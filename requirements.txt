@@ -1,2 +1,5 @@
 python-telegram-bot
 dotenv
+httpx
+pytest
+pytest-asyncio

@@ -1,0 +1,1795 @@
+{
+  "success": true,
+  "data": {
+    "from": {
+      "locations": [
+        {
+          "code": 1726,
+          "name_ru": "\u0413\u043e\u0440\u043e\u0434 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+          "name_uz": "Toshkent shahri",
+          "name_en": "Tashkent city"
+        },
+        {
+          "code": 1722,
+          "name_ru": "\u0421\u0443\u0440\u0445\u0430\u043d\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Surxondaryo viloyati",
+          "name_en": "Surkhandarya region"
+        },
+        {
+          "code": 1708,
+          "name_ru": "\u0414\u0436\u0438\u0437\u0430\u043a\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Jizzax viloyati",
+          "name_en": "Jizzakh city"
+        },
+        {
+          "code": 1718,
+          "name_ru": "\u0421\u0430\u043c\u0430\u0440\u043a\u0430\u043d\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Samarqand viloyati",
+          "name_en": "Samarkand region"
+        },
+        {
+          "code": 1727,
+          "name_ru": "\u0422\u0430\u0448\u043a\u0435\u043d\u0442\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Toshkent viloyati",
+          "name_en": "Tashkent region"
+        },
+        {
+          "code": 1706,
+          "name_ru": "\u0411\u0443\u0445\u0430\u0440\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Buxoro viloyati",
+          "name_en": "Bukhara region"
+        },
+        {
+          "code": 1712,
+          "name_ru": "\u041d\u0430\u0432\u043e\u0438\u0439\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Navoiy viloyati",
+          "name_en": "Navoi region"
+        },
+        {
+          "code": 1710,
+          "name_ru": "\u041a\u0430\u0448\u043a\u0430\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Qashqadaryo viloyat",
+          "name_en": "Kashkadarya region"
+        },
+        {
+          "code": 1733,
+          "name_ru": "\u0425\u043e\u0440\u0435\u0437\u043c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Xorazm viloyati",
+          "name_en": "Khorezm region"
+        },
+        {
+          "code": 1735,
+          "name_ru": "\u041a\u0430\u0440\u0430\u043a\u0430\u043b\u043f\u0430\u043a\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
+          "name_uz": "Qoraqalpogiston Respublikasi",
+          "name_en": "Karakalpak Republic"
+        }
+      ],
+      "stations": [
+        {
+          "code": 1718227501,
+          "location_code": 1718,
+          "name_ru": "\u0414\u0436\u0443\u043c\u0430",
+          "name_uz": "Juma",
+          "name_en": "Djuma"
+        },
+        {
+          "code": 1727419,
+          "location_code": 1727,
+          "name_ru": "\u0427\u0438\u0440\u0447\u0438\u043a",
+          "name_uz": "Chirchiq",
+          "name_en": "Chirchiq"
+        },
+        {
+          "code": 1708218,
+          "location_code": 1708,
+          "name_ru": "\u0417\u0430\u0430\u043c\u0438\u043d",
+          "name_uz": "Zomin",
+          "name_en": "Zaamin"
+        },
+        {
+          "code": 1726,
+          "location_code": 1726,
+          "name_ru": "\u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+          "name_uz": "Toshkent",
+          "name_en": "Tashkent"
+        },
+        {
+          "code": 1722221,
+          "location_code": 1722,
+          "name_ru": "\u0423\u0437\u0443\u043d",
+          "name_uz": "Uzun",
+          "name_en": "Uzun"
+        },
+        {
+          "code": 1727407,
+          "location_code": 1727,
+          "name_ru": "\u0410\u043d\u0433\u0440\u0435\u043d",
+          "name_uz": "Angren",
+          "name_en": "Angren"
+        },
+        {
+          "code": 1722210,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0435\u043d\u0430\u0443",
+          "name_uz": "Denov",
+          "name_en": "Denov"
+        },
+        {
+          "code": 1706212501,
+          "location_code": 1706,
+          "name_ru": "\u0412\u0430\u0431\u043a\u0435\u043d\u0442",
+          "name_uz": "Vobkent",
+          "name_en": "Vabkent"
+        },
+        {
+          "code": 1706230,
+          "location_code": 1706,
+          "name_ru": "\u041a\u0430\u0440\u0430\u043a\u0443\u043b\u044c",
+          "name_uz": "Qorako'l",
+          "name_en": "Karakul"
+        },
+        {
+          "code": 1706,
+          "location_code": 1706,
+          "name_ru": "\u0411\u0443\u0445\u0430\u0440\u0430",
+          "name_uz": "Buxoro",
+          "name_en": "Bukhara"
+        },
+        {
+          "code": 1718212,
+          "location_code": 1718,
+          "name_ru": "\u0418\u0448\u0442\u044b\u0445\u0430\u043d",
+          "name_uz": "Ishtixon",
+          "name_en": "Ishtixan"
+        },
+        {
+          "code": 1718215,
+          "location_code": 1718,
+          "name_ru": "\u041a\u0430\u0442\u0442\u0430\u043a\u0443\u0440\u0433\u0430\u043d",
+          "name_uz": "Kattaqo'rg'on",
+          "name_en": "Kattakurgan"
+        },
+        {
+          "code": 1712251,
+          "location_code": 1712,
+          "name_ru": "\u0425\u0430\u0442\u0438\u0440\u0447\u0438",
+          "name_uz": "Xatirchi",
+          "name_en": "Xatirchi"
+        },
+        {
+          "code": 1718203551,
+          "location_code": 1718,
+          "name_ru": "\u041b\u0430\u0438\u0448",
+          "name_uz": "Loish",
+          "name_en": "Laish"
+        },
+        {
+          "code": 1722212,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0436\u0430\u0440\u043a\u0443\u0440\u0433\u0430\u043d",
+          "name_uz": "Jarqo'rg'on",
+          "name_en": "Djarkurgan"
+        },
+        {
+          "code": 1710224,
+          "location_code": 1710,
+          "name_ru": "\u041a\u0430\u0440\u0448\u0438",
+          "name_uz": "Qarshi",
+          "name_en": "Karshi"
+        },
+        {
+          "code": 1718235817,
+          "location_code": 1718,
+          "name_ru": "\u0414\u0436\u0430\u043c",
+          "name_uz": "Jom",
+          "name_en": "Djam"
+        },
+        {
+          "code": 1722401,
+          "location_code": 1722,
+          "name_ru": "\u0422\u0435\u0440\u043c\u0435\u0437",
+          "name_uz": "Termiz",
+          "name_en": "Termez"
+        },
+        {
+          "code": 1708218503,
+          "location_code": 1708,
+          "name_ru": "\u0414\u0430\u0448\u0442\u0430\u0431\u0430\u0434",
+          "name_uz": "Dashtobod",
+          "name_en": "Dashtabad"
+        },
+        {
+          "code": 1733212827,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0435\u0440\u0431\u0435\u043d\u0442",
+          "name_uz": "Darband",
+          "name_en": "Derbent"
+        },
+        {
+          "code": 1710207,
+          "location_code": 1710,
+          "name_ru": "\u0413\u0443\u0437\u0430\u0440",
+          "name_uz": "G'uzor",
+          "name_en": "Guzar"
+        },
+        {
+          "code": 1718,
+          "location_code": 1718,
+          "name_ru": "\u0421\u0430\u043c\u0430\u0440\u043a\u0430\u043d\u0434",
+          "name_uz": "Samarqand",
+          "name_en": "Samarkand"
+        },
+        {
+          "code": 1710245,
+          "location_code": 1710,
+          "name_ru": "\u0428\u0430\u0445\u0440\u0438\u0441\u0430\u0431\u0437",
+          "name_uz": "Shaxrisabz",
+          "name_en": "Shaxrisabz"
+        },
+        {
+          "code": 1714212855,
+          "location_code": 1722,
+          "name_ru": "\u041a\u0443\u043c\u043a\u0443\u0440\u0433\u0430\u043d",
+          "name_uz": "Qumqorg'on",
+          "name_en": "Qumqorg'on"
+        },
+        {
+          "code": 1710240551,
+          "location_code": 1710,
+          "name_ru": "\u0415\u0442\u0442\u0438\u0442\u043e\u043c",
+          "name_uz": "Yettitom",
+          "name_en": "Yettitom"
+        },
+        {
+          "code": 1712,
+          "location_code": 1712,
+          "name_ru": "\u041d\u0430\u0432\u043e\u0438",
+          "name_uz": "Navoiy",
+          "name_en": "Navai"
+        },
+        {
+          "code": 1722202551,
+          "location_code": 1722,
+          "name_ru": "\u0410\u043d\u0433\u043e\u0440",
+          "name_uz": "Angor",
+          "name_en": "Angor"
+        },
+        {
+          "code": 111,
+          "location_code": 1718,
+          "name_ru": "\u0421\u0430\u0440\u044b\u043a\u0443\u043b\u044c",
+          "name_uz": "Sariko'l",
+          "name_en": "Sarikul"
+        },
+        {
+          "code": 1722223,
+          "location_code": 1722,
+          "name_ru": "\u0428\u0435\u0440\u0430\u0431\u0430\u0434",
+          "name_uz": "Sherobod",
+          "name_en": "Sherabad"
+        },
+        {
+          "code": 1722226872,
+          "location_code": 1722,
+          "name_ru": "\u0428\u0443\u0440\u0447\u0438",
+          "name_uz": "Sho'rchi",
+          "name_en": "Shurchi"
+        },
+        {
+          "code": 1710212,
+          "location_code": 1710,
+          "name_ru": "\u0414\u0435\u0445\u043a\u0430\u043d\u0430\u0431\u0430\u0434",
+          "name_uz": "Dehqonobod",
+          "name_en": "Dekhkanabad"
+        },
+        {
+          "code": 1712251550,
+          "location_code": 1718,
+          "name_ru": "\u041a\u0430\u0434\u0430\u043d",
+          "name_uz": "Kadan",
+          "name_en": "Kadan"
+        },
+        {
+          "code": 1712216501,
+          "location_code": 1712,
+          "name_ru": "\u041a\u044b\u0437\u044b\u043b\u0442\u0435\u043f\u0430",
+          "name_uz": "Qiziltepa",
+          "name_en": "Kyzyltepa"
+        },
+        {
+          "code": 1733230551,
+          "location_code": 1733,
+          "name_ru": "\u0428\u0430\u0432\u0430\u0442",
+          "name_uz": "Shovot",
+          "name_en": "Shavat"
+        },
+        {
+          "code": 1733226,
+          "location_code": 1733,
+          "name_ru": "\u0425\u0438\u0432\u0430",
+          "name_uz": "Xiva",
+          "name_en": "Khiva"
+        },
+        {
+          "code": 1735207501,
+          "location_code": 1735,
+          "name_ru": "\u0411\u0435\u0440\u0443\u043d\u0438",
+          "name_uz": "Beruniy",
+          "name_en": "Beruni"
+        },
+        {
+          "code": 1733208,
+          "location_code": 1733,
+          "name_ru": "\u0413\u0443\u0440\u043b\u0430\u043d",
+          "name_uz": "Gurlan",
+          "name_en": "Gurlan"
+        },
+        {
+          "code": 1733217,
+          "location_code": 1733,
+          "name_ru": "\u0423\u0440\u0433\u0435\u043d\u0447",
+          "name_uz": "Urganch",
+          "name_en": "Urgench"
+        },
+        {
+          "code": 1718203816,
+          "location_code": 1712,
+          "name_ru": "\u0417\u0430\u0440\u0430\u0444\u0448\u0430\u043d",
+          "name_uz": "Zarafshon",
+          "name_en": "Zarafshan"
+        },
+        {
+          "code": 1735225,
+          "location_code": 1735,
+          "name_ru": "\u041d\u0443\u043a\u0443\u0441",
+          "name_uz": "Nukus",
+          "name_en": "Nukus"
+        },
+        {
+          "code": 1718218554,
+          "location_code": 1718,
+          "name_ru": "\u041c\u0438\u0440\u0431\u0430\u0437\u0430\u0440",
+          "name_uz": "Mirbozor",
+          "name_en": "Mirbazar"
+        }
+      ]
+    },
+    "to": {
+      "locations": [
+        {
+          "code": 1726,
+          "name_ru": "\u0413\u043e\u0440\u043e\u0434 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+          "name_uz": "Toshkent shahri",
+          "name_en": "Tashkent city"
+        },
+        {
+          "code": 9900,
+          "name_ru": "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0435 \u0440\u0435\u0439\u0441\u044b",
+          "name_uz": "Xalqaro reys",
+          "name_en": "International routes"
+        },
+        {
+          "code": 1708,
+          "name_ru": "\u0414\u0436\u0438\u0437\u0430\u043a\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Jizzax viloyati",
+          "name_en": "Jizzakh city"
+        },
+        {
+          "code": 1706,
+          "name_ru": "\u0411\u0443\u0445\u0430\u0440\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Buxoro viloyati",
+          "name_en": "Bukhara region"
+        },
+        {
+          "code": 1735,
+          "name_ru": "\u041a\u0430\u0440\u0430\u043a\u0430\u043b\u043f\u0430\u043a\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
+          "name_uz": "Qoraqalpogiston Respublikasi",
+          "name_en": "Karakalpak Republic"
+        },
+        {
+          "code": 1712,
+          "name_ru": "\u041d\u0430\u0432\u043e\u0438\u0439\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Navoiy viloyati",
+          "name_en": "Navoi region"
+        },
+        {
+          "code": 1718,
+          "name_ru": "\u0421\u0430\u043c\u0430\u0440\u043a\u0430\u043d\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Samarqand viloyati",
+          "name_en": "Samarkand region"
+        },
+        {
+          "code": 1722,
+          "name_ru": "\u0421\u0443\u0440\u0445\u0430\u043d\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Surxondaryo viloyati",
+          "name_en": "Surkhandarya region"
+        },
+        {
+          "code": 1733,
+          "name_ru": "\u0425\u043e\u0440\u0435\u0437\u043c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Xorazm viloyati",
+          "name_en": "Khorezm region"
+        },
+        {
+          "code": 1710,
+          "name_ru": "\u041a\u0430\u0448\u043a\u0430\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Qashqadaryo viloyat",
+          "name_en": "Kashkadarya region"
+        },
+        {
+          "code": 1724,
+          "name_ru": "\u0421\u044b\u0440\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Sirdaryo viloyati",
+          "name_en": "Sirdaryo region"
+        },
+        {
+          "code": 1727,
+          "name_ru": "\u0422\u0430\u0448\u043a\u0435\u043d\u0442\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "name_uz": "Toshkent viloyati",
+          "name_en": "Tashkent region"
+        }
+      ],
+      "stations": [
+        {
+          "code": 1718227501,
+          "location_code": 1718,
+          "name_ru": "\u0414\u0436\u0443\u043c\u0430",
+          "name_uz": "Juma",
+          "name_en": "Djuma"
+        },
+        {
+          "code": 990002010,
+          "location_code": 9900,
+          "name_ru": "\u0410\u0441\u0442\u0430\u043d\u0430",
+          "name_uz": "Astana",
+          "name_en": "Astana"
+        },
+        {
+          "code": 1718216551,
+          "location_code": 1718,
+          "name_ru": "\u041a\u0443\u0448\u0440\u0430\u0431\u0430\u0434",
+          "name_uz": "Qo'shrobod",
+          "name_en": "Kushrabad"
+        },
+        {
+          "code": 1710212,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0435\u0445\u043a\u0430\u043d\u0430\u0431\u0430\u0434",
+          "name_uz": "Dehqonobod",
+          "name_en": "Dekhkanabad"
+        },
+        {
+          "code": 990001011,
+          "location_code": 9900,
+          "name_ru": "\u0421\u0430\u043c\u0430\u0440\u0430",
+          "name_uz": "Samara",
+          "name_en": "Samara"
+        },
+        {
+          "code": 990001004,
+          "location_code": 9900,
+          "name_ru": "\u041d\u0438\u0436\u043d\u0438\u0439 \u041d\u043e\u0432\u0433\u043e\u0440\u043e\u0434",
+          "name_uz": "Nijniy Novgorod",
+          "name_en": "Nizhny Novgorod"
+        },
+        {
+          "code": 1722223,
+          "location_code": 1722,
+          "name_ru": "\u0428\u0435\u0440\u0430\u0431\u0430\u0434",
+          "name_uz": "Sherobod",
+          "name_en": "Sherabad"
+        },
+        {
+          "code": 1718206,
+          "location_code": 1718,
+          "name_ru": "\u0411\u0443\u043b\u0443\u043d\u0433\u0443\u0440",
+          "name_uz": "Bulung'ur",
+          "name_en": "Bulungur"
+        },
+        {
+          "code": 990005005,
+          "location_code": 9900,
+          "name_ru": "\u0422\u043e\u043b\u044c\u044f\u0442\u0442\u0438",
+          "name_uz": "Tolyatti",
+          "name_en": "Tolyatti"
+        },
+        {
+          "code": 1722226872,
+          "location_code": 1722,
+          "name_ru": "\u0428\u0443\u0440\u0447\u0438",
+          "name_uz": "Sho'rchi",
+          "name_en": "Shurchi"
+        },
+        {
+          "code": 990005003,
+          "location_code": 9900,
+          "name_ru": "\u0427\u0435\u0431\u043e\u043a\u0441\u0430\u0440\u044b",
+          "name_uz": "Cheboksari",
+          "name_en": "Cheboksary"
+        },
+        {
+          "code": 1708218503,
+          "location_code": 1708,
+          "name_ru": "\u0414\u0430\u0448\u0442\u0430\u0431\u0430\u0434",
+          "name_uz": "Dashtobod",
+          "name_en": "Dashtabad"
+        },
+        {
+          "code": 990001002,
+          "location_code": 9900,
+          "name_ru": "\u041a\u0430\u0437\u0430\u043d\u044c",
+          "name_uz": "Qozon",
+          "name_en": "Kazan"
+        },
+        {
+          "code": 1708209,
+          "location_code": 1708,
+          "name_ru": "\u0413\u0430\u043b\u043b\u0430\u0430\u0440\u0430\u043b",
+          "name_uz": "G'allaorol",
+          "name_en": "Gallaaral"
+        },
+        {
+          "code": 1733212827,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0435\u0440\u0431\u0435\u043d\u0442",
+          "name_uz": "Darband",
+          "name_en": "Derbent"
+        },
+        {
+          "code": 1735236811,
+          "location_code": 1735,
+          "name_ru": "\u0410\u043c\u0443\u0434\u0430\u0440\u044c\u044f",
+          "name_uz": "Amudaryo",
+          "name_en": "Amudarya"
+        },
+        {
+          "code": 1718218554,
+          "location_code": 1718,
+          "name_ru": "\u041c\u0438\u0440\u0431\u0430\u0437\u0430\u0440",
+          "name_uz": "Mirbozor",
+          "name_en": "Mirbazar"
+        },
+        {
+          "code": 1733208,
+          "location_code": 1733,
+          "name_ru": "\u0413\u0443\u0440\u043b\u0430\u043d",
+          "name_uz": "Gurlan",
+          "name_en": "Gurlan"
+        },
+        {
+          "code": 1718209,
+          "location_code": 1718,
+          "name_ru": "\u0414\u0436\u0430\u043c\u0431\u0430\u0439",
+          "name_uz": "Jomboy",
+          "name_en": "Jambay"
+        },
+        {
+          "code": 990001013,
+          "location_code": 9900,
+          "name_ru": "\u0423\u0444\u0430",
+          "name_uz": "Ufa",
+          "name_en": "Ufa"
+        },
+        {
+          "code": 1718216814,
+          "location_code": 1718,
+          "name_ru": "\u0417\u0430\u0440\u043c\u0438\u0442\u0430\u043d",
+          "name_uz": "Zarmitan",
+          "name_en": "Zarmitan"
+        },
+        {
+          "code": 1726,
+          "location_code": 1726,
+          "name_ru": "\u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+          "name_uz": "Toshkent",
+          "name_en": "Tashkent"
+        },
+        {
+          "code": 990003001,
+          "location_code": 9900,
+          "name_ru": "\u0411\u0438\u0448\u043a\u0435\u043a",
+          "name_uz": "Bishkek",
+          "name_en": "Bishkek"
+        },
+        {
+          "code": 990001007,
+          "location_code": 9900,
+          "name_ru": "\u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+          "name_uz": "Orenburg",
+          "name_en": "Orenburg"
+        },
+        {
+          "code": 1718224502,
+          "location_code": 1718,
+          "name_ru": "\u0427\u0435\u043b\u0430\u043a",
+          "name_uz": "Chelak",
+          "name_en": "Chelak"
+        },
+        {
+          "code": 1714212855,
+          "location_code": 1722,
+          "name_ru": "\u041a\u0443\u043c\u043a\u0443\u0440\u0433\u0430\u043d",
+          "name_uz": "Qumqorg'on",
+          "name_en": "Qumqorg'on"
+        },
+        {
+          "code": 1718230551,
+          "location_code": 1718,
+          "name_ru": "\u0417\u0438\u0430\u0434\u0438\u043d",
+          "name_uz": "Ziyovuddin",
+          "name_en": "Ziadin"
+        },
+        {
+          "code": 990005007,
+          "location_code": 9900,
+          "name_ru": "\u0420\u044f\u0437\u0430\u043d\u044c",
+          "name_uz": "Ryazan",
+          "name_en": "Ryazan"
+        },
+        {
+          "code": 1718,
+          "location_code": 1718,
+          "name_ru": "\u0421\u0430\u043c\u0430\u0440\u043a\u0430\u043d\u0434",
+          "name_uz": "Samarqand",
+          "name_en": "Samarkand"
+        },
+        {
+          "code": 420061,
+          "location_code": 9900,
+          "name_ru": "\u041d\u0430\u0431\u0435\u0440\u0435\u0436\u043d\u044b\u0435 \u0427\u0435\u043b\u043d\u044b",
+          "name_uz": "Naberejnye Chelni",
+          "name_en": "Naberezhnye Chelny"
+        },
+        {
+          "code": 990002002,
+          "location_code": 9900,
+          "name_ru": "\u0410\u043b\u043c\u0430\u0442\u044b",
+          "name_uz": "Olma-ota",
+          "name_en": "Almati"
+        },
+        {
+          "code": 990005004,
+          "location_code": 9900,
+          "name_ru": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
+          "name_uz": "Vladimir",
+          "name_en": "Vladimir"
+        },
+        {
+          "code": 990002007,
+          "location_code": 9900,
+          "name_ru": "\u041a\u0430\u0440\u0430\u0433\u0430\u043d\u0434\u0430",
+          "name_uz": "Karaganda",
+          "name_en": "Karaganda"
+        },
+        {
+          "code": 1708,
+          "location_code": 1708,
+          "name_ru": "\u0414\u0436\u0438\u0437\u0430\u043a",
+          "name_uz": "Jizzax",
+          "name_en": "Jizzakh"
+        },
+        {
+          "code": 1710232579,
+          "location_code": 1722,
+          "name_ru": "\u0421\u0430\u0440\u0438\u0430\u0441\u0438\u044f",
+          "name_uz": "Sariosiyo",
+          "name_en": "Sariasia"
+        },
+        {
+          "code": 1722212,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0436\u0430\u0440\u043a\u0443\u0440\u0433\u0430\u043d",
+          "name_uz": "Jarqo'rg'on",
+          "name_en": "Djarkurgan"
+        },
+        {
+          "code": 1735207501,
+          "location_code": 1735,
+          "name_ru": "\u0411\u0435\u0440\u0443\u043d\u0438",
+          "name_uz": "Beruniy",
+          "name_en": "Beruni"
+        },
+        {
+          "code": 990001005,
+          "location_code": 9900,
+          "name_ru": "\u041d\u043e\u0432\u043e\u0441\u0438\u0431\u0438\u0440\u0441\u043a",
+          "name_uz": "Novosibirsk",
+          "name_en": "Novosibirsk"
+        },
+        {
+          "code": 990001009,
+          "location_code": 9900,
+          "name_ru": "\u041f\u0435\u0440\u043c\u044c",
+          "name_uz": "Perm",
+          "name_en": "Perm"
+        },
+        {
+          "code": 1722202551,
+          "location_code": 1722,
+          "name_ru": "\u0410\u043d\u0433\u043e\u0440",
+          "name_uz": "Angor",
+          "name_en": "Angor"
+        },
+        {
+          "code": 1718212555,
+          "location_code": 1718,
+          "name_ru": "\u041c\u0438\u0442\u0430\u043d",
+          "name_uz": "Mitan",
+          "name_en": "Mitan"
+        },
+        {
+          "code": 1718224,
+          "location_code": 1718,
+          "name_ru": "\u041f\u0430\u0439\u0430\u0440\u044b\u043a",
+          "name_uz": "Payariq",
+          "name_en": "Payarik"
+        },
+        {
+          "code": 1722401,
+          "location_code": 1722,
+          "name_ru": "\u0422\u0435\u0440\u043c\u0435\u0437",
+          "name_uz": "Termiz",
+          "name_en": "Termez"
+        },
+        {
+          "code": 1718203551,
+          "location_code": 1718,
+          "name_ru": "\u041b\u0430\u0438\u0448",
+          "name_uz": "Loish",
+          "name_en": "Laish"
+        },
+        {
+          "code": 1712238,
+          "location_code": 1712,
+          "name_ru": "\u041d\u0443\u0440\u0430\u0442\u0430",
+          "name_uz": "Nurota",
+          "name_en": "Nurota"
+        },
+        {
+          "code": 990005001,
+          "location_code": 9900,
+          "name_ru": "\u0410\u043b\u044c\u043c\u0435\u0442\u044c\u0435\u0432\u0441\u043a",
+          "name_uz": "Almetyevsk",
+          "name_en": "Almetyevsk"
+        },
+        {
+          "code": 990001003,
+          "location_code": 9900,
+          "name_ru": "\u041c\u043e\u0441\u043a\u0432\u0430",
+          "name_uz": "Moskva",
+          "name_en": "Moskva"
+        },
+        {
+          "code": 1718212,
+          "location_code": 1718,
+          "name_ru": "\u0418\u0448\u0442\u044b\u0445\u0430\u043d",
+          "name_uz": "Ishtixon",
+          "name_en": "Ishtixan"
+        },
+        {
+          "code": 1735225,
+          "location_code": 1735,
+          "name_ru": "\u041d\u0443\u043a\u0443\u0441",
+          "name_uz": "Nukus",
+          "name_en": "Nukus"
+        },
+        {
+          "code": 990005002,
+          "location_code": 9900,
+          "name_ru": "\u041d\u0438\u0436\u043d\u0435\u043a\u0430\u043c\u0441\u043a",
+          "name_uz": "Nijnekamsk",
+          "name_en": "Nizhnekamsk"
+        },
+        {
+          "code": 1712216501,
+          "location_code": 1712,
+          "name_ru": "\u041a\u044b\u0437\u044b\u043b\u0442\u0435\u043f\u0430",
+          "name_uz": "Qiziltepa",
+          "name_en": "Kyzyltepa"
+        },
+        {
+          "code": 1712,
+          "location_code": 1712,
+          "name_ru": "\u041d\u0430\u0432\u043e\u0438",
+          "name_uz": "Navoiy",
+          "name_en": "Navai"
+        },
+        {
+          "code": 1712238890,
+          "location_code": 1712,
+          "name_ru": "\u0427\u0443\u044f",
+          "name_uz": "Chuya",
+          "name_en": "Chuuya"
+        },
+        {
+          "code": 1718215,
+          "location_code": 1718,
+          "name_ru": "\u041a\u0430\u0442\u0442\u0430\u043a\u0443\u0440\u0433\u0430\u043d",
+          "name_uz": "Kattaqo'rg'on",
+          "name_en": "Kattakurgan"
+        },
+        {
+          "code": 1706242505,
+          "location_code": 1706,
+          "name_ru": "\u0413\u0430\u0437\u043b\u0438",
+          "name_uz": "Gazli",
+          "name_en": "Gazli"
+        },
+        {
+          "code": 1718216810,
+          "location_code": 1718,
+          "name_ru": "\u0414\u0436\u0443\u0448",
+          "name_uz": "Jo'sh",
+          "name_en": "Djush"
+        },
+        {
+          "code": 990005006,
+          "location_code": 9900,
+          "name_ru": "\u041f\u0435\u043d\u0437\u0430",
+          "name_uz": "Penza",
+          "name_en": "Penza"
+        },
+        {
+          "code": 1722221,
+          "location_code": 1722,
+          "name_ru": "\u0423\u0437\u0443\u043d",
+          "name_uz": "Uzun",
+          "name_en": "Uzun"
+        },
+        {
+          "code": 1722210,
+          "location_code": 1722,
+          "name_ru": "\u0414\u0435\u043d\u0430\u0443",
+          "name_uz": "Denov",
+          "name_en": "Denov"
+        },
+        {
+          "code": 1735233,
+          "location_code": 1735,
+          "name_ru": "\u0422\u0443\u0440\u0442\u043a\u0443\u043b\u044c",
+          "name_uz": "To'rtko'l",
+          "name_en": "Turtkul"
+        },
+        {
+          "code": 990005008,
+          "location_code": 9900,
+          "name_ru": "\u041a\u043e\u043b\u043e\u043c\u043d\u0430",
+          "name_uz": "Kolomna",
+          "name_en": "Kolomna"
+        },
+        {
+          "code": 1706215,
+          "location_code": 1706,
+          "name_ru": "\u0413\u0438\u0436\u0434\u0443\u0432\u0430\u043d",
+          "name_uz": "G'ijduvon",
+          "name_en": "Gijduvan"
+        },
+        {
+          "code": 1706230,
+          "location_code": 1706,
+          "name_ru": "\u041a\u0430\u0440\u0430\u043a\u0443\u043b\u044c",
+          "name_uz": "Qorako'l",
+          "name_en": "Karakul"
+        },
+        {
+          "code": 1706,
+          "location_code": 1706,
+          "name_ru": "\u0411\u0443\u0445\u0430\u0440\u0430",
+          "name_uz": "Buxoro",
+          "name_en": "Bukhara"
+        },
+        {
+          "code": 1706246551,
+          "location_code": 1706,
+          "name_ru": "\u0416\u043e\u043d\u0434\u043e\u0440",
+          "name_uz": "Jondor",
+          "name_en": "Jondor"
+        },
+        {
+          "code": 1712251,
+          "location_code": 1712,
+          "name_ru": "\u0425\u0430\u0442\u0438\u0440\u0447\u0438",
+          "name_uz": "Xatirchi",
+          "name_en": "Xatirchi"
+        },
+        {
+          "code": 1718235817,
+          "location_code": 1718,
+          "name_ru": "\u0414\u0436\u0430\u043c",
+          "name_uz": "Jom",
+          "name_en": "Djam"
+        },
+        {
+          "code": 1710245,
+          "location_code": 1710,
+          "name_ru": "\u0428\u0430\u0445\u0440\u0438\u0441\u0430\u0431\u0437",
+          "name_uz": "Shaxrisabz",
+          "name_en": "Shaxrisabz"
+        },
+        {
+          "code": 1708237840,
+          "location_code": 1724,
+          "name_ru": "\u0425\u043e\u0432\u043e\u0441",
+          "name_uz": "Xovos",
+          "name_en": "Xovos"
+        },
+        {
+          "code": 111,
+          "location_code": 1718,
+          "name_ru": "\u0421\u0430\u0440\u044b\u043a\u0443\u043b\u044c",
+          "name_uz": "Sariko'l",
+          "name_en": "Sarikul"
+        },
+        {
+          "code": 1710242501,
+          "location_code": 1710,
+          "name_ru": "\u0427\u0438\u0440\u0430\u043a\u0447\u0438",
+          "name_uz": "Chiroqchi",
+          "name_en": "Chirakchi"
+        },
+        {
+          "code": 1710224,
+          "location_code": 1710,
+          "name_ru": "\u041a\u0430\u0440\u0448\u0438",
+          "name_uz": "Qarshi",
+          "name_en": "Karshi"
+        },
+        {
+          "code": 1710207,
+          "location_code": 1710,
+          "name_ru": "\u0413\u0443\u0437\u0430\u0440",
+          "name_uz": "G'uzor",
+          "name_en": "Guzar"
+        },
+        {
+          "code": 1710220866,
+          "location_code": 1710,
+          "name_ru": "\u0427\u0438\u043c",
+          "name_uz": "Chim",
+          "name_en": "Chim"
+        },
+        {
+          "code": 1708218,
+          "location_code": 1708,
+          "name_ru": "\u0417\u0430\u0430\u043c\u0438\u043d",
+          "name_uz": "Zomin",
+          "name_en": "Zaamin"
+        },
+        {
+          "code": 1710240551,
+          "location_code": 1710,
+          "name_ru": "\u0415\u0442\u0442\u0438\u0442\u043e\u043c",
+          "name_uz": "Yettitom",
+          "name_en": "Yettitom"
+        },
+        {
+          "code": 1722214592,
+          "location_code": 1724,
+          "name_ru": "\u042f\u043d\u0433\u0438\u0435\u0440",
+          "name_uz": "Yangiyer",
+          "name_en": "Yangier"
+        },
+        {
+          "code": 1712251550,
+          "location_code": 1718,
+          "name_ru": "\u041a\u0430\u0434\u0430\u043d",
+          "name_uz": "Kadan",
+          "name_en": "Kadan"
+        },
+        {
+          "code": 1724226822,
+          "location_code": 1724,
+          "name_ru": "\u0413\u0443\u043b\u0438\u0441\u0442\u0430\u043d",
+          "name_uz": "Guliston",
+          "name_en": "Guliston"
+        },
+        {
+          "code": 1733230551,
+          "location_code": 1733,
+          "name_ru": "\u0428\u0430\u0432\u0430\u0442",
+          "name_uz": "Shovot",
+          "name_en": "Shavat"
+        },
+        {
+          "code": 1733226,
+          "location_code": 1733,
+          "name_ru": "\u0425\u0438\u0432\u0430",
+          "name_uz": "Xiva",
+          "name_en": "Khiva"
+        },
+        {
+          "code": 1733204551,
+          "location_code": 1733,
+          "name_ru": "\u0411\u0430\u0433\u0430\u0442",
+          "name_uz": "Bog\u2018ot",
+          "name_en": "Bagat"
+        },
+        {
+          "code": 1733217,
+          "location_code": 1733,
+          "name_ru": "\u0423\u0440\u0433\u0435\u043d\u0447",
+          "name_uz": "Urganch",
+          "name_en": "Urgench"
+        },
+        {
+          "code": 1733220,
+          "location_code": 1733,
+          "name_ru": "\u0425\u0430\u0437\u0430\u0440\u0430\u0441\u043f",
+          "name_uz": "Hazorasp",
+          "name_en": "Xazarasp"
+        },
+        {
+          "code": 1733223,
+          "location_code": 1733,
+          "name_ru": "\u0425\u0430\u043d\u043a\u0430",
+          "name_uz": "Xonqa",
+          "name_en": "Xanka"
+        },
+        {
+          "code": 1718203816,
+          "location_code": 1712,
+          "name_ru": "\u0417\u0430\u0440\u0430\u0444\u0448\u0430\u043d",
+          "name_uz": "Zarafshon",
+          "name_en": "Zarafshan"
+        },
+        {
+          "code": 1712248,
+          "location_code": 1712,
+          "name_ru": "\u0423\u0447\u043a\u0443\u0434\u0443\u043a",
+          "name_uz": "Uchquduq",
+          "name_en": "Uchkuduk"
+        }
+      ]
+    },
+    "locations": [
+      {
+        "code": 1726,
+        "name_ru": "\u0413\u043e\u0440\u043e\u0434 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+        "name_uz": "Toshkent shahri",
+        "name_en": "Tashkent city"
+      },
+      {
+        "code": 1722,
+        "name_ru": "\u0421\u0443\u0440\u0445\u0430\u043d\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Surxondaryo viloyati",
+        "name_en": "Surkhandarya region"
+      },
+      {
+        "code": 1708,
+        "name_ru": "\u0414\u0436\u0438\u0437\u0430\u043a\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Jizzax viloyati",
+        "name_en": "Jizzakh city"
+      },
+      {
+        "code": 1718,
+        "name_ru": "\u0421\u0430\u043c\u0430\u0440\u043a\u0430\u043d\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Samarqand viloyati",
+        "name_en": "Samarkand region"
+      },
+      {
+        "code": 1727,
+        "name_ru": "\u0422\u0430\u0448\u043a\u0435\u043d\u0442\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Toshkent viloyati",
+        "name_en": "Tashkent region"
+      },
+      {
+        "code": 9900,
+        "name_ru": "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0435 \u0440\u0435\u0439\u0441\u044b",
+        "name_uz": "Xalqaro reys",
+        "name_en": "International routes"
+      },
+      {
+        "code": 1706,
+        "name_ru": "\u0411\u0443\u0445\u0430\u0440\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Buxoro viloyati",
+        "name_en": "Bukhara region"
+      },
+      {
+        "code": 1735,
+        "name_ru": "\u041a\u0430\u0440\u0430\u043a\u0430\u043b\u043f\u0430\u043a\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
+        "name_uz": "Qoraqalpogiston Respublikasi",
+        "name_en": "Karakalpak Republic"
+      },
+      {
+        "code": 1712,
+        "name_ru": "\u041d\u0430\u0432\u043e\u0438\u0439\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Navoiy viloyati",
+        "name_en": "Navoi region"
+      },
+      {
+        "code": 1733,
+        "name_ru": "\u0425\u043e\u0440\u0435\u0437\u043c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Xorazm viloyati",
+        "name_en": "Khorezm region"
+      },
+      {
+        "code": 1710,
+        "name_ru": "\u041a\u0430\u0448\u043a\u0430\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Qashqadaryo viloyat",
+        "name_en": "Kashkadarya region"
+      },
+      {
+        "code": 1724,
+        "name_ru": "\u0421\u044b\u0440\u0434\u0430\u0440\u044c\u0438\u043d\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "name_uz": "Sirdaryo viloyati",
+        "name_en": "Sirdaryo region"
+      }
+    ],
+    "stations": [
+      {
+        "code": 1718227501,
+        "location_code": 1718,
+        "name_ru": "\u0414\u0436\u0443\u043c\u0430",
+        "name_uz": "Juma",
+        "name_en": "Djuma"
+      },
+      {
+        "code": 1727419,
+        "location_code": 1727,
+        "name_ru": "\u0427\u0438\u0440\u0447\u0438\u043a",
+        "name_uz": "Chirchiq",
+        "name_en": "Chirchiq"
+      },
+      {
+        "code": 1708218,
+        "location_code": 1708,
+        "name_ru": "\u0417\u0430\u0430\u043c\u0438\u043d",
+        "name_uz": "Zomin",
+        "name_en": "Zaamin"
+      },
+      {
+        "code": 1726,
+        "location_code": 1726,
+        "name_ru": "\u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+        "name_uz": "Toshkent",
+        "name_en": "Tashkent"
+      },
+      {
+        "code": 1722221,
+        "location_code": 1722,
+        "name_ru": "\u0423\u0437\u0443\u043d",
+        "name_uz": "Uzun",
+        "name_en": "Uzun"
+      },
+      {
+        "code": 1727407,
+        "location_code": 1727,
+        "name_ru": "\u0410\u043d\u0433\u0440\u0435\u043d",
+        "name_uz": "Angren",
+        "name_en": "Angren"
+      },
+      {
+        "code": 1722210,
+        "location_code": 1722,
+        "name_ru": "\u0414\u0435\u043d\u0430\u0443",
+        "name_uz": "Denov",
+        "name_en": "Denov"
+      },
+      {
+        "code": 990002010,
+        "location_code": 9900,
+        "name_ru": "\u0410\u0441\u0442\u0430\u043d\u0430",
+        "name_uz": "Astana",
+        "name_en": "Astana"
+      },
+      {
+        "code": 1718216551,
+        "location_code": 1718,
+        "name_ru": "\u041a\u0443\u0448\u0440\u0430\u0431\u0430\u0434",
+        "name_uz": "Qo'shrobod",
+        "name_en": "Kushrabad"
+      },
+      {
+        "code": 1710212,
+        "location_code": 1722,
+        "name_ru": "\u0414\u0435\u0445\u043a\u0430\u043d\u0430\u0431\u0430\u0434",
+        "name_uz": "Dehqonobod",
+        "name_en": "Dekhkanabad"
+      },
+      {
+        "code": 990001011,
+        "location_code": 9900,
+        "name_ru": "\u0421\u0430\u043c\u0430\u0440\u0430",
+        "name_uz": "Samara",
+        "name_en": "Samara"
+      },
+      {
+        "code": 990001004,
+        "location_code": 9900,
+        "name_ru": "\u041d\u0438\u0436\u043d\u0438\u0439 \u041d\u043e\u0432\u0433\u043e\u0440\u043e\u0434",
+        "name_uz": "Nijniy Novgorod",
+        "name_en": "Nizhny Novgorod"
+      },
+      {
+        "code": 1722223,
+        "location_code": 1722,
+        "name_ru": "\u0428\u0435\u0440\u0430\u0431\u0430\u0434",
+        "name_uz": "Sherobod",
+        "name_en": "Sherabad"
+      },
+      {
+        "code": 1718206,
+        "location_code": 1718,
+        "name_ru": "\u0411\u0443\u043b\u0443\u043d\u0433\u0443\u0440",
+        "name_uz": "Bulung'ur",
+        "name_en": "Bulungur"
+      },
+      {
+        "code": 990005005,
+        "location_code": 9900,
+        "name_ru": "\u0422\u043e\u043b\u044c\u044f\u0442\u0442\u0438",
+        "name_uz": "Tolyatti",
+        "name_en": "Tolyatti"
+      },
+      {
+        "code": 1722226872,
+        "location_code": 1722,
+        "name_ru": "\u0428\u0443\u0440\u0447\u0438",
+        "name_uz": "Sho'rchi",
+        "name_en": "Shurchi"
+      },
+      {
+        "code": 990005003,
+        "location_code": 9900,
+        "name_ru": "\u0427\u0435\u0431\u043e\u043a\u0441\u0430\u0440\u044b",
+        "name_uz": "Cheboksari",
+        "name_en": "Cheboksary"
+      },
+      {
+        "code": 1708218503,
+        "location_code": 1708,
+        "name_ru": "\u0414\u0430\u0448\u0442\u0430\u0431\u0430\u0434",
+        "name_uz": "Dashtobod",
+        "name_en": "Dashtabad"
+      },
+      {
+        "code": 990001002,
+        "location_code": 9900,
+        "name_ru": "\u041a\u0430\u0437\u0430\u043d\u044c",
+        "name_uz": "Qozon",
+        "name_en": "Kazan"
+      },
+      {
+        "code": 1708209,
+        "location_code": 1708,
+        "name_ru": "\u0413\u0430\u043b\u043b\u0430\u0430\u0440\u0430\u043b",
+        "name_uz": "G'allaorol",
+        "name_en": "Gallaaral"
+      },
+      {
+        "code": 1733212827,
+        "location_code": 1722,
+        "name_ru": "\u0414\u0435\u0440\u0431\u0435\u043d\u0442",
+        "name_uz": "Darband",
+        "name_en": "Derbent"
+      },
+      {
+        "code": 1735236811,
+        "location_code": 1735,
+        "name_ru": "\u0410\u043c\u0443\u0434\u0430\u0440\u044c\u044f",
+        "name_uz": "Amudaryo",
+        "name_en": "Amudarya"
+      },
+      {
+        "code": 1718218554,
+        "location_code": 1718,
+        "name_ru": "\u041c\u0438\u0440\u0431\u0430\u0437\u0430\u0440",
+        "name_uz": "Mirbozor",
+        "name_en": "Mirbazar"
+      },
+      {
+        "code": 1733208,
+        "location_code": 1733,
+        "name_ru": "\u0413\u0443\u0440\u043b\u0430\u043d",
+        "name_uz": "Gurlan",
+        "name_en": "Gurlan"
+      },
+      {
+        "code": 1718209,
+        "location_code": 1718,
+        "name_ru": "\u0414\u0436\u0430\u043c\u0431\u0430\u0439",
+        "name_uz": "Jomboy",
+        "name_en": "Jambay"
+      },
+      {
+        "code": 990001013,
+        "location_code": 9900,
+        "name_ru": "\u0423\u0444\u0430",
+        "name_uz": "Ufa",
+        "name_en": "Ufa"
+      },
+      {
+        "code": 1718216814,
+        "location_code": 1718,
+        "name_ru": "\u0417\u0430\u0440\u043c\u0438\u0442\u0430\u043d",
+        "name_uz": "Zarmitan",
+        "name_en": "Zarmitan"
+      },
+      {
+        "code": 990003001,
+        "location_code": 9900,
+        "name_ru": "\u0411\u0438\u0448\u043a\u0435\u043a",
+        "name_uz": "Bishkek",
+        "name_en": "Bishkek"
+      },
+      {
+        "code": 990001007,
+        "location_code": 9900,
+        "name_ru": "\u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+        "name_uz": "Orenburg",
+        "name_en": "Orenburg"
+      },
+      {
+        "code": 1718224502,
+        "location_code": 1718,
+        "name_ru": "\u0427\u0435\u043b\u0430\u043a",
+        "name_uz": "Chelak",
+        "name_en": "Chelak"
+      },
+      {
+        "code": 1714212855,
+        "location_code": 1722,
+        "name_ru": "\u041a\u0443\u043c\u043a\u0443\u0440\u0433\u0430\u043d",
+        "name_uz": "Qumqorg'on",
+        "name_en": "Qumqorg'on"
+      },
+      {
+        "code": 1718230551,
+        "location_code": 1718,
+        "name_ru": "\u0417\u0438\u0430\u0434\u0438\u043d",
+        "name_uz": "Ziyovuddin",
+        "name_en": "Ziadin"
+      },
+      {
+        "code": 990005007,
+        "location_code": 9900,
+        "name_ru": "\u0420\u044f\u0437\u0430\u043d\u044c",
+        "name_uz": "Ryazan",
+        "name_en": "Ryazan"
+      },
+      {
+        "code": 1718,
+        "location_code": 1718,
+        "name_ru": "\u0421\u0430\u043c\u0430\u0440\u043a\u0430\u043d\u0434",
+        "name_uz": "Samarqand",
+        "name_en": "Samarkand"
+      },
+      {
+        "code": 420061,
+        "location_code": 9900,
+        "name_ru": "\u041d\u0430\u0431\u0435\u0440\u0435\u0436\u043d\u044b\u0435 \u0427\u0435\u043b\u043d\u044b",
+        "name_uz": "Naberejnye Chelni",
+        "name_en": "Naberezhnye Chelny"
+      },
+      {
+        "code": 990002002,
+        "location_code": 9900,
+        "name_ru": "\u0410\u043b\u043c\u0430\u0442\u044b",
+        "name_uz": "Olma-ota",
+        "name_en": "Almati"
+      },
+      {
+        "code": 990005004,
+        "location_code": 9900,
+        "name_ru": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
+        "name_uz": "Vladimir",
+        "name_en": "Vladimir"
+      },
+      {
+        "code": 990002007,
+        "location_code": 9900,
+        "name_ru": "\u041a\u0430\u0440\u0430\u0433\u0430\u043d\u0434\u0430",
+        "name_uz": "Karaganda",
+        "name_en": "Karaganda"
+      },
+      {
+        "code": 1708,
+        "location_code": 1708,
+        "name_ru": "\u0414\u0436\u0438\u0437\u0430\u043a",
+        "name_uz": "Jizzax",
+        "name_en": "Jizzakh"
+      },
+      {
+        "code": 1710232579,
+        "location_code": 1722,
+        "name_ru": "\u0421\u0430\u0440\u0438\u0430\u0441\u0438\u044f",
+        "name_uz": "Sariosiyo",
+        "name_en": "Sariasia"
+      },
+      {
+        "code": 1722212,
+        "location_code": 1722,
+        "name_ru": "\u0414\u0436\u0430\u0440\u043a\u0443\u0440\u0433\u0430\u043d",
+        "name_uz": "Jarqo'rg'on",
+        "name_en": "Djarkurgan"
+      },
+      {
+        "code": 1735207501,
+        "location_code": 1735,
+        "name_ru": "\u0411\u0435\u0440\u0443\u043d\u0438",
+        "name_uz": "Beruniy",
+        "name_en": "Beruni"
+      },
+      {
+        "code": 990001005,
+        "location_code": 9900,
+        "name_ru": "\u041d\u043e\u0432\u043e\u0441\u0438\u0431\u0438\u0440\u0441\u043a",
+        "name_uz": "Novosibirsk",
+        "name_en": "Novosibirsk"
+      },
+      {
+        "code": 990001009,
+        "location_code": 9900,
+        "name_ru": "\u041f\u0435\u0440\u043c\u044c",
+        "name_uz": "Perm",
+        "name_en": "Perm"
+      },
+      {
+        "code": 1722202551,
+        "location_code": 1722,
+        "name_ru": "\u0410\u043d\u0433\u043e\u0440",
+        "name_uz": "Angor",
+        "name_en": "Angor"
+      },
+      {
+        "code": 1718212555,
+        "location_code": 1718,
+        "name_ru": "\u041c\u0438\u0442\u0430\u043d",
+        "name_uz": "Mitan",
+        "name_en": "Mitan"
+      },
+      {
+        "code": 1718224,
+        "location_code": 1718,
+        "name_ru": "\u041f\u0430\u0439\u0430\u0440\u044b\u043a",
+        "name_uz": "Payariq",
+        "name_en": "Payarik"
+      },
+      {
+        "code": 1722401,
+        "location_code": 1722,
+        "name_ru": "\u0422\u0435\u0440\u043c\u0435\u0437",
+        "name_uz": "Termiz",
+        "name_en": "Termez"
+      },
+      {
+        "code": 1718203551,
+        "location_code": 1718,
+        "name_ru": "\u041b\u0430\u0438\u0448",
+        "name_uz": "Loish",
+        "name_en": "Laish"
+      },
+      {
+        "code": 1712238,
+        "location_code": 1712,
+        "name_ru": "\u041d\u0443\u0440\u0430\u0442\u0430",
+        "name_uz": "Nurota",
+        "name_en": "Nurota"
+      },
+      {
+        "code": 990005001,
+        "location_code": 9900,
+        "name_ru": "\u0410\u043b\u044c\u043c\u0435\u0442\u044c\u0435\u0432\u0441\u043a",
+        "name_uz": "Almetyevsk",
+        "name_en": "Almetyevsk"
+      },
+      {
+        "code": 990001003,
+        "location_code": 9900,
+        "name_ru": "\u041c\u043e\u0441\u043a\u0432\u0430",
+        "name_uz": "Moskva",
+        "name_en": "Moskva"
+      },
+      {
+        "code": 1718212,
+        "location_code": 1718,
+        "name_ru": "\u0418\u0448\u0442\u044b\u0445\u0430\u043d",
+        "name_uz": "Ishtixon",
+        "name_en": "Ishtixan"
+      },
+      {
+        "code": 1735225,
+        "location_code": 1735,
+        "name_ru": "\u041d\u0443\u043a\u0443\u0441",
+        "name_uz": "Nukus",
+        "name_en": "Nukus"
+      },
+      {
+        "code": 990005002,
+        "location_code": 9900,
+        "name_ru": "\u041d\u0438\u0436\u043d\u0435\u043a\u0430\u043c\u0441\u043a",
+        "name_uz": "Nijnekamsk",
+        "name_en": "Nizhnekamsk"
+      },
+      {
+        "code": 1712216501,
+        "location_code": 1712,
+        "name_ru": "\u041a\u044b\u0437\u044b\u043b\u0442\u0435\u043f\u0430",
+        "name_uz": "Qiziltepa",
+        "name_en": "Kyzyltepa"
+      },
+      {
+        "code": 1712,
+        "location_code": 1712,
+        "name_ru": "\u041d\u0430\u0432\u043e\u0438",
+        "name_uz": "Navoiy",
+        "name_en": "Navai"
+      },
+      {
+        "code": 1712238890,
+        "location_code": 1712,
+        "name_ru": "\u0427\u0443\u044f",
+        "name_uz": "Chuya",
+        "name_en": "Chuuya"
+      },
+      {
+        "code": 1718215,
+        "location_code": 1718,
+        "name_ru": "\u041a\u0430\u0442\u0442\u0430\u043a\u0443\u0440\u0433\u0430\u043d",
+        "name_uz": "Kattaqo'rg'on",
+        "name_en": "Kattakurgan"
+      },
+      {
+        "code": 1706242505,
+        "location_code": 1706,
+        "name_ru": "\u0413\u0430\u0437\u043b\u0438",
+        "name_uz": "Gazli",
+        "name_en": "Gazli"
+      },
+      {
+        "code": 1718216810,
+        "location_code": 1718,
+        "name_ru": "\u0414\u0436\u0443\u0448",
+        "name_uz": "Jo'sh",
+        "name_en": "Djush"
+      },
+      {
+        "code": 990005006,
+        "location_code": 9900,
+        "name_ru": "\u041f\u0435\u043d\u0437\u0430",
+        "name_uz": "Penza",
+        "name_en": "Penza"
+      },
+      {
+        "code": 1735233,
+        "location_code": 1735,
+        "name_ru": "\u0422\u0443\u0440\u0442\u043a\u0443\u043b\u044c",
+        "name_uz": "To'rtko'l",
+        "name_en": "Turtkul"
+      },
+      {
+        "code": 990005008,
+        "location_code": 9900,
+        "name_ru": "\u041a\u043e\u043b\u043e\u043c\u043d\u0430",
+        "name_uz": "Kolomna",
+        "name_en": "Kolomna"
+      },
+      {
+        "code": 1706212501,
+        "location_code": 1706,
+        "name_ru": "\u0412\u0430\u0431\u043a\u0435\u043d\u0442",
+        "name_uz": "Vobkent",
+        "name_en": "Vabkent"
+      },
+      {
+        "code": 1706230,
+        "location_code": 1706,
+        "name_ru": "\u041a\u0430\u0440\u0430\u043a\u0443\u043b\u044c",
+        "name_uz": "Qorako'l",
+        "name_en": "Karakul"
+      },
+      {
+        "code": 1706,
+        "location_code": 1706,
+        "name_ru": "\u0411\u0443\u0445\u0430\u0440\u0430",
+        "name_uz": "Buxoro",
+        "name_en": "Bukhara"
+      },
+      {
+        "code": 1706215,
+        "location_code": 1706,
+        "name_ru": "\u0413\u0438\u0436\u0434\u0443\u0432\u0430\u043d",
+        "name_uz": "G'ijduvon",
+        "name_en": "Gijduvan"
+      },
+      {
+        "code": 1706246551,
+        "location_code": 1706,
+        "name_ru": "\u0416\u043e\u043d\u0434\u043e\u0440",
+        "name_uz": "Jondor",
+        "name_en": "Jondor"
+      },
+      {
+        "code": 1712251,
+        "location_code": 1712,
+        "name_ru": "\u0425\u0430\u0442\u0438\u0440\u0447\u0438",
+        "name_uz": "Xatirchi",
+        "name_en": "Xatirchi"
+      },
+      {
+        "code": 1710224,
+        "location_code": 1710,
+        "name_ru": "\u041a\u0430\u0440\u0448\u0438",
+        "name_uz": "Qarshi",
+        "name_en": "Karshi"
+      },
+      {
+        "code": 1718235817,
+        "location_code": 1718,
+        "name_ru": "\u0414\u0436\u0430\u043c",
+        "name_uz": "Jom",
+        "name_en": "Djam"
+      },
+      {
+        "code": 1710207,
+        "location_code": 1710,
+        "name_ru": "\u0413\u0443\u0437\u0430\u0440",
+        "name_uz": "G'uzor",
+        "name_en": "Guzar"
+      },
+      {
+        "code": 1710245,
+        "location_code": 1710,
+        "name_ru": "\u0428\u0430\u0445\u0440\u0438\u0441\u0430\u0431\u0437",
+        "name_uz": "Shaxrisabz",
+        "name_en": "Shaxrisabz"
+      },
+      {
+        "code": 1710240551,
+        "location_code": 1710,
+        "name_ru": "\u0415\u0442\u0442\u0438\u0442\u043e\u043c",
+        "name_uz": "Yettitom",
+        "name_en": "Yettitom"
+      },
+      {
+        "code": 111,
+        "location_code": 1718,
+        "name_ru": "\u0421\u0430\u0440\u044b\u043a\u0443\u043b\u044c",
+        "name_uz": "Sariko'l",
+        "name_en": "Sarikul"
+      },
+      {
+        "code": 1712251550,
+        "location_code": 1718,
+        "name_ru": "\u041a\u0430\u0434\u0430\u043d",
+        "name_uz": "Kadan",
+        "name_en": "Kadan"
+      },
+      {
+        "code": 1708237840,
+        "location_code": 1724,
+        "name_ru": "\u0425\u043e\u0432\u043e\u0441",
+        "name_uz": "Xovos",
+        "name_en": "Xovos"
+      },
+      {
+        "code": 1710242501,
+        "location_code": 1710,
+        "name_ru": "\u0427\u0438\u0440\u0430\u043a\u0447\u0438",
+        "name_uz": "Chiroqchi",
+        "name_en": "Chirakchi"
+      },
+      {
+        "code": 1710220866,
+        "location_code": 1710,
+        "name_ru": "\u0427\u0438\u043c",
+        "name_uz": "Chim",
+        "name_en": "Chim"
+      },
+      {
+        "code": 1722214592,
+        "location_code": 1724,
+        "name_ru": "\u042f\u043d\u0433\u0438\u0435\u0440",
+        "name_uz": "Yangiyer",
+        "name_en": "Yangier"
+      },
+      {
+        "code": 1724226822,
+        "location_code": 1724,
+        "name_ru": "\u0413\u0443\u043b\u0438\u0441\u0442\u0430\u043d",
+        "name_uz": "Guliston",
+        "name_en": "Guliston"
+      },
+      {
+        "code": 1733230551,
+        "location_code": 1733,
+        "name_ru": "\u0428\u0430\u0432\u0430\u0442",
+        "name_uz": "Shovot",
+        "name_en": "Shavat"
+      },
+      {
+        "code": 1733226,
+        "location_code": 1733,
+        "name_ru": "\u0425\u0438\u0432\u0430",
+        "name_uz": "Xiva",
+        "name_en": "Khiva"
+      },
+      {
+        "code": 1733217,
+        "location_code": 1733,
+        "name_ru": "\u0423\u0440\u0433\u0435\u043d\u0447",
+        "name_uz": "Urganch",
+        "name_en": "Urgench"
+      },
+      {
+        "code": 1733204551,
+        "location_code": 1733,
+        "name_ru": "\u0411\u0430\u0433\u0430\u0442",
+        "name_uz": "Bog\u2018ot",
+        "name_en": "Bagat"
+      },
+      {
+        "code": 1733220,
+        "location_code": 1733,
+        "name_ru": "\u0425\u0430\u0437\u0430\u0440\u0430\u0441\u043f",
+        "name_uz": "Hazorasp",
+        "name_en": "Xazarasp"
+      },
+      {
+        "code": 1733223,
+        "location_code": 1733,
+        "name_ru": "\u0425\u0430\u043d\u043a\u0430",
+        "name_uz": "Xonqa",
+        "name_en": "Xanka"
+      },
+      {
+        "code": 1718203816,
+        "location_code": 1712,
+        "name_ru": "\u0417\u0430\u0440\u0430\u0444\u0448\u0430\u043d",
+        "name_uz": "Zarafshon",
+        "name_en": "Zarafshan"
+      },
+      {
+        "code": 1712248,
+        "location_code": 1712,
+        "name_ru": "\u0423\u0447\u043a\u0443\u0434\u0443\u043a",
+        "name_uz": "Uchquduq",
+        "name_en": "Uchkuduk"
+      }
+    ],
+    "apis": [
+      {
+        "name": "UZAVTOVOKZAL",
+        "id": 0,
+        "url": "https://wapi.avtoticket.uz"
+      },
+      {
+        "name": "ALLCOMFORT",
+        "id": 1,
+        "url": "https://wapi.congresshall.avtotickets.uz"
+      },
+      {
+        "name": "XATIRCHI",
+        "id": 2,
+        "url": "https://wapi.xatirchi.avtotickets.uz"
+      },
+      {
+        "name": "UZAUTOTRANS",
+        "id": 3,
+        "url": "https://wapi.uzautotrans.avtotickets.uz"
+      },
+      {
+        "name": "COMFORTAUTO",
+        "id": 4,
+        "url": "https://wapi.comfortauto.avtotickets.uz"
+      },
+      {
+        "name": "EXPRESSTOUR",
+        "id": 5,
+        "url": "https://wapi.expresstour.avtotickets.uz"
+      },
+      {
+        "name": "NUKUS",
+        "id": 6,
+        "url": "https://wapi.nukus.avtotickets.uz"
+      },
+      {
+        "name": "HUNARMAND",
+        "id": 7,
+        "url": "https://wapi.hunarmand.avtotickets.uz"
+      }
+    ]
+  },
+  "links": null,
+  "errors": null
+}

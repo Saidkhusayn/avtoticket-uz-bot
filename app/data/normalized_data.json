@@ -1,0 +1,299 @@
+{
+  "locations": {
+    "1722": {
+      "names": {
+        "ru": "Сурхандарьинская область",
+        "uz": "Surxondaryo viloyati",
+        "en": "Surkhandarya region"
+      },
+      "stations": {
+        "1722221": {
+          "ru": "Узун",
+          "uz": "Uzun",
+          "en": "Uzun"
+        },
+        "1722210": {
+          "ru": "Денау",
+          "uz": "Denov",
+          "en": "Denov"
+        },
+        "1722212": {
+          "ru": "Джаркурган",
+          "uz": "Jarqo'rg'on",
+          "en": "Djarkurgan"
+        },
+        "1722401": {
+          "ru": "Термез",
+          "uz": "Termiz",
+          "en": "Termez"
+        },
+        "1733212827": {
+          "ru": "Дербент",
+          "uz": "Darband",
+          "en": "Derbent"
+        },
+        "1714212855": {
+          "ru": "Кумкурган",
+          "uz": "Qumqorg'on",
+          "en": "Qumqorg'on"
+        },
+        "1722202551": {
+          "ru": "Ангор",
+          "uz": "Angor",
+          "en": "Angor"
+        },
+        "1722223": {
+          "ru": "Шерабад",
+          "uz": "Sherobod",
+          "en": "Sherabad"
+        },
+        "1722226872": {
+          "ru": "Шурчи",
+          "uz": "Sho'rchi",
+          "en": "Shurchi"
+        }
+      }
+    },
+    "1708": {
+      "names": {
+        "ru": "Джизакская область",
+        "uz": "Jizzax viloyati",
+        "en": "Jizzakh city"
+      },
+      "stations": {
+        "1708218": {
+          "ru": "Заамин",
+          "uz": "Zomin",
+          "en": "Zaamin"
+        },
+        "1708218503": {
+          "ru": "Даштабад",
+          "uz": "Dashtobod",
+          "en": "Dashtabad"
+        }
+      }
+    },
+    "1718": {
+      "names": {
+        "ru": "Самаркандская область",
+        "uz": "Samarqand viloyati",
+        "en": "Samarkand region"
+      },
+      "stations": {
+        "1718227501": {
+          "ru": "Джума",
+          "uz": "Juma",
+          "en": "Djuma"
+        },
+        "1718212": {
+          "ru": "Иштыхан",
+          "uz": "Ishtixon",
+          "en": "Ishtixan"
+        },
+        "1718215": {
+          "ru": "Каттакурган",
+          "uz": "Kattaqo'rg'on",
+          "en": "Kattakurgan"
+        },
+        "1718203551": {
+          "ru": "Лаиш",
+          "uz": "Loish",
+          "en": "Laish"
+        },
+        "1718235817": {
+          "ru": "Джам",
+          "uz": "Jom",
+          "en": "Djam"
+        },
+        "1718": {
+          "ru": "Самарканд",
+          "uz": "Samarqand",
+          "en": "Samarkand"
+        },
+        "111": {
+          "ru": "Сарыкуль",
+          "uz": "Sariko'l",
+          "en": "Sarikul"
+        },
+        "1712251550": {
+          "ru": "Кадан",
+          "uz": "Kadan",
+          "en": "Kadan"
+        },
+        "1718218554": {
+          "ru": "Мирбазар",
+          "uz": "Mirbozor",
+          "en": "Mirbazar"
+        }
+      }
+    },
+    "1726": {
+      "names": {
+        "ru": "Город Ташкент",
+        "uz": "Toshkent shahri",
+        "en": "Tashkent city"
+      },
+      "stations": {
+        "1726": {
+          "ru": "Ташкент",
+          "uz": "Toshkent",
+          "en": "Tashkent"
+        }
+      }
+    },
+    "1727": {
+      "names": {
+        "ru": "Ташкентская область",
+        "uz": "Toshkent viloyati",
+        "en": "Tashkent region"
+      },
+      "stations": {
+        "1727419": {
+          "ru": "Чирчик",
+          "uz": "Chirchiq",
+          "en": "Chirchiq"
+        },
+        "1727407": {
+          "ru": "Ангрен",
+          "uz": "Angren",
+          "en": "Angren"
+        }
+      }
+    },
+    "1706": {
+      "names": {
+        "ru": "Бухарская область",
+        "uz": "Buxoro viloyati",
+        "en": "Bukhara region"
+      },
+      "stations": {
+        "1706212501": {
+          "ru": "Вабкент",
+          "uz": "Vobkent",
+          "en": "Vabkent"
+        },
+        "1706230": {
+          "ru": "Каракуль",
+          "uz": "Qorako'l",
+          "en": "Karakul"
+        },
+        "1706": {
+          "ru": "Бухара",
+          "uz": "Buxoro",
+          "en": "Bukhara"
+        }
+      }
+    },
+    "1712": {
+      "names": {
+        "ru": "Навоийская область",
+        "uz": "Navoiy viloyati",
+        "en": "Navoi region"
+      },
+      "stations": {
+        "1712251": {
+          "ru": "Хатирчи",
+          "uz": "Xatirchi",
+          "en": "Xatirchi"
+        },
+        "1712": {
+          "ru": "Навои",
+          "uz": "Navoiy",
+          "en": "Navai"
+        },
+        "1712216501": {
+          "ru": "Кызылтепа",
+          "uz": "Qiziltepa",
+          "en": "Kyzyltepa"
+        },
+        "1718203816": {
+          "ru": "Зарафшан",
+          "uz": "Zarafshon",
+          "en": "Zarafshan"
+        }
+      }
+    },
+    "1710": {
+      "names": {
+        "ru": "Кашкадарьинская область",
+        "uz": "Qashqadaryo viloyat",
+        "en": "Kashkadarya region"
+      },
+      "stations": {
+        "1710224": {
+          "ru": "Карши",
+          "uz": "Qarshi",
+          "en": "Karshi"
+        },
+        "1710207": {
+          "ru": "Гузар",
+          "uz": "G'uzor",
+          "en": "Guzar"
+        },
+        "1710245": {
+          "ru": "Шахрисабз",
+          "uz": "Shaxrisabz",
+          "en": "Shaxrisabz"
+        },
+        "1710240551": {
+          "ru": "Еттитом",
+          "uz": "Yettitom",
+          "en": "Yettitom"
+        },
+        "1710212": {
+          "ru": "Дехканабад",
+          "uz": "Dehqonobod",
+          "en": "Dekhkanabad"
+        }
+      }
+    },
+    "1733": {
+      "names": {
+        "ru": "Хорезмская область",
+        "uz": "Xorazm viloyati",
+        "en": "Khorezm region"
+      },
+      "stations": {
+        "1733226": {
+          "ru": "Хива",
+          "uz": "Xiva",
+          "en": "Khiva"
+        },
+        "1733208": {
+          "ru": "Гурлан",
+          "uz": "Gurlan",
+          "en": "Gurlan"
+        },
+        "1733230551": {
+          "ru": "Шават",
+          "uz": "Shovot",
+          "en": "Shavat"
+        },
+        "1733217": {
+          "ru": "Ургенч",
+          "uz": "Urganch",
+          "en": "Urgench"
+        }
+      }
+    },
+    "1735": {
+      "names": {
+        "ru": "Каракалпакская Республика",
+        "uz": "Qoraqalpogiston Respublikasi",
+        "en": "Karakalpak Republic"
+      },
+      "stations": {
+        "1735207501": {
+          "ru": "Беруни",
+          "uz": "Beruniy",
+          "en": "Beruni"
+        },
+        "1735225": {
+          "ru": "Нукус",
+          "uz": "Nukus",
+          "en": "Nukus"
+        }
+      }
+    }
+  }
+}
