@@ -39,7 +39,7 @@ def normalize_locations(raw: dict) -> dict:
             "uz": loc["name_uz"],
             "en": loc["name_en"]
         }
-        
+
     # 3. Normalize 'from' stations under their respective locations
     for stn in from_stations:
         loc_code = stn["location_code"]
@@ -56,20 +56,20 @@ def normalize_locations(raw: dict) -> dict:
 
     return normalized
 
-def run_test():
-    import asyncio
-    import json
+# def run_test():
+#     import asyncio
+#     import json
 
-    async def test():
-        data = await fetch_locations("https://wapi.avtoticket.uz/api/api-locations")
-        normalized = normalize_locations(data)
-        json_data = json.dumps(normalized, ensure_ascii=False, indent=2)
-        with open("app/data/normalized_data.json", "w", encoding="utf-8") as f:
-            f.write(json_data)
+#     async def test():
+#         data = await fetch_locations("https://wapi.avtoticket.uz/api/api-locations")
+#         normalized = normalize_locations(data)
+#         json_data = json.dumps(normalized, ensure_ascii=False, indent=2)
+#         with open("app/data/normalized_data.json", "w", encoding="utf-8") as f:
+#             f.write(json_data)
 
-    asyncio.run(test())
+#     asyncio.run(test())
 
-if __name__ == "__main__":
-    run_test()
-    print("Done.")
+# if __name__ == "__main__":
+#     run_test()
+#     print("Done.")
     

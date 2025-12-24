@@ -1,10 +1,12 @@
-import os
 import logging
-import dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-dotenv.load_dotenv()
+from app.core.config import BOT_TOKEN, API_LOCATIONS_URL
+from services.avtoticket import fetch_locations, normalize_locations
+from services.cache import set_locations
+
+# dotenv.load_dotenv()
 
 # LOGGING (module-level is fine)
 logging.basicConfig(
@@ -13,15 +15,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-if not BOT_TOKEN:
-    raise RuntimeError("BOT_TOKEN is not set")
+# BOT_TOKEN = os.getenv("BOT_TOKEN")
+# if not BOT_TOKEN:
+#     raise RuntimeError("BOT_TOKEN is not set")
+
+async def on_startup():
+    raw_data = await fetch_locations(API_LOCATIONS_URL) # type: ignore
+    normalized = normalize_locations(raw_data)
+    set_locations(normalized)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello! How can I assist you my Master?")  # type: ignore
 
 def run_bot() -> None:
-    app = ApplicationBuilder().token(BOT_TOKEN).build() # type: ignore
+    app = ApplicationBuilder().token(BOT_TOKEN).post_init(on_startup).build() # type: ignore
 
     app.add_handler(CommandHandler("start", start))
 
