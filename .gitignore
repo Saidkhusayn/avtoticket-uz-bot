@@ -3,7 +3,7 @@
 venv/
 __pycache__/
 *.pyc
-.app/data/
+app/data/
 .pytest_cache/
 tg_bot.egg-info/
 *.egg-info/
