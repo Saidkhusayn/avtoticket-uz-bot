@@ -1,5 +1,4 @@
 import httpx
-from collections import defaultdict
 
 async def fetch_locations(url: str) -> dict:
     async with httpx.AsyncClient() as client:
@@ -14,46 +13,42 @@ def normalize_locations(raw: dict) -> dict:
     Returns normalized, bot-friendly structure
     """
 
-    # 1. Validate minimal structure (fail early)
+    # Validate minimal structure (fail early)
     if not raw or not raw.get("success"):
         raise ValueError("Invalid api-locations response")
 
     data = raw["data"]
+    from_codes = {loc["code"] for loc in data["from"]["locations"]}
+    to_codes = {loc["code"] for loc in data["to"]["locations"]}
 
-    normalized = {
-        "locations": {}
-    }
+    normalized = {"locations": {}}
 
-    # 2. Normalize 'from' locations
-    from_locations = data.get("from", {}).get("locations", [])
-    from_stations = data.get("from", {}).get("stations", [])
-
-    for loc in from_locations:
+    # 1) Base locations (all known locations)
+    for loc in data["locations"]:
         code = loc["code"]
+        code_str = str(code)
 
-        if code not in normalized["locations"]:
-            normalized["locations"][code] = {}
-
-        normalized["locations"][code]["names"] = {
-            "ru": loc["name_ru"],
-            "uz": loc["name_uz"],
-            "en": loc["name_en"]
+        normalized["locations"][code_str] = {
+            "names": {
+                "ru": loc["name_ru"],
+                "uz": loc["name_uz"],
+                "en": loc["name_en"],
+            }, 
+            "stations": {},
+            "can_depart": code in from_codes,
+            "can_arrive": code in to_codes,
         }
 
-    # 3. Normalize 'from' stations under their respective locations
-    for stn in from_stations:
-        loc_code = stn["location_code"]
-        stn_code = stn["code"]
+    # 2) Stations (nested under locations)
+    for stn in data["stations"]:
+        loc_code_str = str(stn["location_code"])
+        if loc_code_str not in normalized["locations"]:
+            continue
 
-        if "stations" not in normalized["locations"][loc_code]:
-            normalized["locations"][loc_code]["stations"] = {}
-
-        normalized["locations"][loc_code]["stations"][stn_code] = {
+        normalized["locations"][loc_code_str]["stations"][str(stn["code"])] = {
             "ru": stn["name_ru"],
             "uz": stn["name_uz"],
-            "en": stn["name_en"]
+            "en": stn["name_en"],          
         }
-
-    return normalized
-
     
+    return normalized

@@ -1,0 +1,7 @@
+{
+  "start.welcome": "Добро пожаловать!",
+  "start.choose_language": "Выберите язык",
+  "button.confirm": "Подтвердить",
+  "button.cancel": "Отмена",
+  "error.generic": "Что-то пошло не так"
+}

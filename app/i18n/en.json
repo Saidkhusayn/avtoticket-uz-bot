@@ -1,0 +1,7 @@
+{
+  "start.welcome": "Welcome!",
+  "start.choose_language": "Choose your language",
+  "button.confirm": "Confirm",
+  "button.cancel": "Cancel",
+  "error.generic": "Something went wrong"
+}

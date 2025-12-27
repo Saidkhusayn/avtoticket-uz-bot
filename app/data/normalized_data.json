@@ -17,30 +17,25 @@
           "uz": "Denov",
           "en": "Denov"
         },
-        "1722212": {
-          "ru": "Джаркурган",
-          "uz": "Jarqo'rg'on",
-          "en": "Djarkurgan"
-        },
-        "1722401": {
-          "ru": "Термез",
-          "uz": "Termiz",
-          "en": "Termez"
-        },
-        "1733212827": {
-          "ru": "Дербент",
-          "uz": "Darband",
-          "en": "Derbent"
+        "1710212": {
+          "ru": "Дехканабад",
+          "uz": "Dehqonobod",
+          "en": "Dekhkanabad"
         },
         "1714212855": {
           "ru": "Кумкурган",
           "uz": "Qumqorg'on",
           "en": "Qumqorg'on"
         },
-        "1722202551": {
-          "ru": "Ангор",
-          "uz": "Angor",
-          "en": "Angor"
+        "1710232579": {
+          "ru": "Сариасия",
+          "uz": "Sariosiyo",
+          "en": "Sariasia"
+        },
+        "1722212": {
+          "ru": "Джаркурган",
+          "uz": "Jarqo'rg'on",
+          "en": "Djarkurgan"
         },
         "1722223": {
           "ru": "Шерабад",
@@ -51,8 +46,25 @@
           "ru": "Шурчи",
           "uz": "Sho'rchi",
           "en": "Shurchi"
+        },
+        "1722202551": {
+          "ru": "Ангор",
+          "uz": "Angor",
+          "en": "Angor"
+        },
+        "1722401": {
+          "ru": "Термез",
+          "uz": "Termiz",
+          "en": "Termez"
+        },
+        "1733212827": {
+          "ru": "Дербент",
+          "uz": "Darband",
+          "en": "Derbent"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
     "1708": {
       "names": {
@@ -66,12 +78,24 @@
           "uz": "Zomin",
           "en": "Zaamin"
         },
+        "1708": {
+          "ru": "Джизак",
+          "uz": "Jizzax",
+          "en": "Jizzakh"
+        },
         "1708218503": {
           "ru": "Даштабад",
           "uz": "Dashtobod",
           "en": "Dashtabad"
+        },
+        "1708209": {
+          "ru": "Галлаарал",
+          "uz": "G'allaorol",
+          "en": "Gallaaral"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
     "1718": {
       "names": {
@@ -85,30 +109,95 @@
           "uz": "Juma",
           "en": "Djuma"
         },
-        "1718212": {
-          "ru": "Иштыхан",
-          "uz": "Ishtixon",
-          "en": "Ishtixan"
+        "1718": {
+          "ru": "Самарканд",
+          "uz": "Samarqand",
+          "en": "Samarkand"
         },
-        "1718215": {
-          "ru": "Каттакурган",
-          "uz": "Kattaqo'rg'on",
-          "en": "Kattakurgan"
+        "1718216551": {
+          "ru": "Кушрабад",
+          "uz": "Qo'shrobod",
+          "en": "Kushrabad"
+        },
+        "1718224502": {
+          "ru": "Челак",
+          "uz": "Chelak",
+          "en": "Chelak"
+        },
+        "1718230551": {
+          "ru": "Зиадин",
+          "uz": "Ziyovuddin",
+          "en": "Ziadin"
+        },
+        "1718236": {
+          "ru": "Ургут",
+          "uz": "Urgut",
+          "en": "Urgut"
+        },
+        "1718206": {
+          "ru": "Булунгур",
+          "uz": "Bulung'ur",
+          "en": "Bulungur"
+        },
+        "1718212555": {
+          "ru": "Митан",
+          "uz": "Mitan",
+          "en": "Mitan"
+        },
+        "1718224": {
+          "ru": "Пайарык",
+          "uz": "Payariq",
+          "en": "Payarik"
+        },
+        "1706204820": {
+          "ru": "Джумабазар",
+          "uz": "Jumabozor",
+          "en": "Jumabazar"
         },
         "1718203551": {
           "ru": "Лаиш",
           "uz": "Loish",
           "en": "Laish"
         },
+        "1718212": {
+          "ru": "Иштыхан",
+          "uz": "Ishtixon",
+          "en": "Ishtixan"
+        },
+        "1718238551": {
+          "ru": "Тайлок",
+          "uz": "Toyloq",
+          "en": "Tylock"
+        },
+        "1718218554": {
+          "ru": "Мирбазар",
+          "uz": "Mirbozor",
+          "en": "Mirbazar"
+        },
+        "1718209": {
+          "ru": "Джамбай",
+          "uz": "Jomboy",
+          "en": "Jambay"
+        },
+        "1718215": {
+          "ru": "Каттакурган",
+          "uz": "Kattaqo'rg'on",
+          "en": "Kattakurgan"
+        },
+        "1718216814": {
+          "ru": "Зармитан",
+          "uz": "Zarmitan",
+          "en": "Zarmitan"
+        },
+        "1718216810": {
+          "ru": "Джуш",
+          "uz": "Jo'sh",
+          "en": "Djush"
+        },
         "1718235817": {
           "ru": "Джам",
           "uz": "Jom",
           "en": "Djam"
-        },
-        "1718": {
-          "ru": "Самарканд",
-          "uz": "Samarqand",
-          "en": "Samarkand"
         },
         "111": {
           "ru": "Сарыкуль",
@@ -119,13 +208,10 @@
           "ru": "Кадан",
           "uz": "Kadan",
           "en": "Kadan"
-        },
-        "1718218554": {
-          "ru": "Мирбазар",
-          "uz": "Mirbozor",
-          "en": "Mirbazar"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
     "1726": {
       "names": {
@@ -139,7 +225,9 @@
           "uz": "Toshkent",
           "en": "Tashkent"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
     "1727": {
       "names": {
@@ -158,7 +246,35 @@
           "uz": "Angren",
           "en": "Angren"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
+    },
+    "9900": {
+      "names": {
+        "ru": "Международные рейсы",
+        "uz": "Xalqaro reys",
+        "en": "International routes"
+      },
+      "stations": {
+        "990002002": {
+          "ru": "Алматы",
+          "uz": "Olma-ota",
+          "en": "Almati"
+        },
+        "990001005": {
+          "ru": "Новосибирск",
+          "uz": "Novosibirsk",
+          "en": "Novosibirsk"
+        },
+        "990003001": {
+          "ru": "Бишкек",
+          "uz": "Bishkek",
+          "en": "Bishkek"
+        }
+      },
+      "can_depart": false,
+      "can_arrive": true
     },
     "1706": {
       "names": {
@@ -167,6 +283,11 @@
         "en": "Bukhara region"
       },
       "stations": {
+        "1706242505": {
+          "ru": "Газли",
+          "uz": "Gazli",
+          "en": "Gazli"
+        },
         "1706212501": {
           "ru": "Вабкент",
           "uz": "Vobkent",
@@ -181,8 +302,51 @@
           "ru": "Бухара",
           "uz": "Buxoro",
           "en": "Bukhara"
+        },
+        "1706215": {
+          "ru": "Гиждуван",
+          "uz": "G'ijduvon",
+          "en": "Gijduvan"
+        },
+        "1706246551": {
+          "ru": "Жондор",
+          "uz": "Jondor",
+          "en": "Jondor"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
+    },
+    "1735": {
+      "names": {
+        "ru": "Каракалпакская Республика",
+        "uz": "Qoraqalpogiston Respublikasi",
+        "en": "Karakalpak Republic"
+      },
+      "stations": {
+        "1735207501": {
+          "ru": "Беруни",
+          "uz": "Beruniy",
+          "en": "Beruni"
+        },
+        "1735236811": {
+          "ru": "Амударья",
+          "uz": "Amudaryo",
+          "en": "Amudarya"
+        },
+        "1735225": {
+          "ru": "Нукус",
+          "uz": "Nukus",
+          "en": "Nukus"
+        },
+        "1735233": {
+          "ru": "Турткуль",
+          "uz": "To'rtko'l",
+          "en": "Turtkul"
+        }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
     "1712": {
       "names": {
@@ -191,27 +355,100 @@
         "en": "Navoi region"
       },
       "stations": {
-        "1712251": {
-          "ru": "Хатирчи",
-          "uz": "Xatirchi",
-          "en": "Xatirchi"
+        "1722214586": {
+          "ru": "Навбахор",
+          "uz": "Navbaxor",
+          "en": "Navbaxar"
         },
-        "1712": {
-          "ru": "Навои",
-          "uz": "Navoiy",
-          "en": "Navai"
+        "1712211": {
+          "ru": "Канимех",
+          "uz": "Kanimex",
+          "en": "Kanimex"
+        },
+        "1712238": {
+          "ru": "Нурата",
+          "uz": "Nurota",
+          "en": "Nurota"
         },
         "1712216501": {
           "ru": "Кызылтепа",
           "uz": "Qiziltepa",
           "en": "Kyzyltepa"
         },
+        "1712": {
+          "ru": "Навои",
+          "uz": "Navoiy",
+          "en": "Navai"
+        },
+        "1712238890": {
+          "ru": "Чуя",
+          "uz": "Chuya",
+          "en": "Chuuya"
+        },
+        "1712251": {
+          "ru": "Хатирчи",
+          "uz": "Xatirchi",
+          "en": "Xatirchi"
+        },
         "1718203816": {
           "ru": "Зарафшан",
           "uz": "Zarafshon",
           "en": "Zarafshan"
+        },
+        "1712248": {
+          "ru": "Учкудук",
+          "uz": "Uchquduq",
+          "en": "Uchkuduk"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
+    },
+    "1733": {
+      "names": {
+        "ru": "Хорезмская область",
+        "uz": "Xorazm viloyati",
+        "en": "Khorezm region"
+      },
+      "stations": {
+        "1733204551": {
+          "ru": "Багат",
+          "uz": "Bog'ot",
+          "en": "Bagat"
+        },
+        "1733217": {
+          "ru": "Ургенч",
+          "uz": "Urganch",
+          "en": "Urgench"
+        },
+        "1733208": {
+          "ru": "Гурлан",
+          "uz": "Gurlan",
+          "en": "Gurlan"
+        },
+        "1733223": {
+          "ru": "Ханка",
+          "uz": "Xonqa",
+          "en": "Xanka"
+        },
+        "1733220": {
+          "ru": "Хазарасп",
+          "uz": "Hazorasp",
+          "en": "Xazarasp"
+        },
+        "1733230551": {
+          "ru": "Шават",
+          "uz": "Shovot",
+          "en": "Shavat"
+        },
+        "1733226": {
+          "ru": "Хива",
+          "uz": "Xiva",
+          "en": "Khiva"
+        }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
     "1710": {
       "names": {
@@ -240,60 +477,45 @@
           "uz": "Yettitom",
           "en": "Yettitom"
         },
-        "1710212": {
-          "ru": "Дехканабад",
-          "uz": "Dehqonobod",
-          "en": "Dekhkanabad"
+        "1710242501": {
+          "ru": "Чиракчи",
+          "uz": "Chiroqchi",
+          "en": "Chirakchi"
+        },
+        "1710220866": {
+          "ru": "Чим",
+          "uz": "Chim",
+          "en": "Chim"
         }
-      }
+      },
+      "can_depart": true,
+      "can_arrive": true
     },
-    "1733": {
+    "1724": {
       "names": {
-        "ru": "Хорезмская область",
-        "uz": "Xorazm viloyati",
-        "en": "Khorezm region"
+        "ru": "Сырдарьинская область",
+        "uz": "Sirdaryo viloyati",
+        "en": "Sirdaryo region"
       },
       "stations": {
-        "1733226": {
-          "ru": "Хива",
-          "uz": "Xiva",
-          "en": "Khiva"
+        "1708237840": {
+          "ru": "Ховос",
+          "uz": "Xovos",
+          "en": "Xovos"
         },
-        "1733208": {
-          "ru": "Гурлан",
-          "uz": "Gurlan",
-          "en": "Gurlan"
+        "1722214592": {
+          "ru": "Янгиер",
+          "uz": "Yangiyer",
+          "en": "Yangier"
         },
-        "1733230551": {
-          "ru": "Шават",
-          "uz": "Shovot",
-          "en": "Shavat"
-        },
-        "1733217": {
-          "ru": "Ургенч",
-          "uz": "Urganch",
-          "en": "Urgench"
+        "1724226822": {
+          "ru": "Гулистан",
+          "uz": "Guliston",
+          "en": "Guliston"
         }
-      }
-    },
-    "1735": {
-      "names": {
-        "ru": "Каракалпакская Республика",
-        "uz": "Qoraqalpogiston Respublikasi",
-        "en": "Karakalpak Republic"
       },
-      "stations": {
-        "1735207501": {
-          "ru": "Беруни",
-          "uz": "Beruniy",
-          "en": "Beruni"
-        },
-        "1735225": {
-          "ru": "Нукус",
-          "uz": "Nukus",
-          "en": "Nukus"
-        }
-      }
+      "can_depart": false,
+      "can_arrive": true
     }
   }
 }
