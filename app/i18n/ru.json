@@ -6,5 +6,9 @@
   "error.generic": "Что-то пошло не так",
   "button.english": "Английский",
   "button.russian": "Русский",
-  "button.uzbek": "Узбекский"
+  "button.uzbek": "Узбекский",
+  "select.departure.location": "Выберите пункт отправления",
+  "select.departure.station": "Выберите станцию отправления",
+  "select.destination.station": "Выберите станцию назначения",
+  "select.destination.location": "Выберите пункт назначения"
 }

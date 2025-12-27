@@ -6,5 +6,9 @@
   "error.generic": "Xatolik yuz berdi",
   "button.english": "Inglizcha",
   "button.russian": "Ruscha",
-  "button.uzbek": "O'zbekcha"
+  "button.uzbek": "O'zbekcha",
+  "select.departure.location": "Jo‘nash manzilini tanlang",
+  "select.departure.station": "Jo‘nash bekatini tanlang",
+  "select.destination.station": "Borish bekatini tanlang",
+  "select.destination.location": "Borish manzilini tanlang"
 }

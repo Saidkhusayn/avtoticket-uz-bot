@@ -1,11 +1,12 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 from app.core.i18n import t
+from app.handlers.select_from import show_from_location
 
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def show_languages(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_user:
-        user_lang = update.effective_user.language_code or "en"
+        user_lang = update.effective_user.language_code or "uz"
 
     keyboard = [
         [InlineKeyboardButton("English", callback_data="lang:en")],
@@ -31,3 +32,4 @@ async def set_language(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.edit_message_text(
         t(lang, "start.welcome")
     )
+    await show_from_location(update, context)

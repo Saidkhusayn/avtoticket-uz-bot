@@ -22,5 +22,5 @@ def t(lang: str, key: str) -> str:
 def get_lang(update: Update, context: ContextTypes.DEFAULT_TYPE) -> str:
     return context.user_data.get( # type: ignore
         "lang",
-        update.effective_user.language_code or "en" # type: ignore
+        update.effective_user.language_code or "uz" # type: ignore
     )

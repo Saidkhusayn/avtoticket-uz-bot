@@ -6,5 +6,9 @@
   "error.generic": "Something went wrong",
   "button.english": "English",
   "button.uzbek": "Uzbek",
-  "button.russian": "Russian"
+  "button.russian": "Russian",
+  "select.departure.location": "Select departure location",
+  "select.departure.station": "Select departure station",
+  "select.destination.station": "Select destination station",
+  "select.destination.location": "Select destination location"
 }
