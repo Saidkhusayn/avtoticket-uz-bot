@@ -1,10 +1,11 @@
 import logging
-from telegram.ext import ApplicationBuilder, CommandHandler, Application
+from telegram.ext import ApplicationBuilder, CommandHandler, Application, CallbackQueryHandler
 
 from app.core.config import BOT_TOKEN, API_LOCATIONS_URL
+from app.core.i18n import load_translations
 from services.avtoticket import fetch_locations, normalize_locations
 from services.cache import set_locations
-from app.handlers.start import start
+from app.handlers.start import start, set_language
 
 # LOGGING (module-level is fine)
 logging.basicConfig(
@@ -17,12 +18,14 @@ async def on_startup(app: Application) -> None:
     raw_data = await fetch_locations(API_LOCATIONS_URL) # type: ignore
     normalized = normalize_locations(raw_data)
     set_locations(normalized)
-    print("Locations data fetched and cached.")
+    load_translations()
+    print("Locations data cached and translations loaded.")
 
 def run_bot() -> None:
     app = ApplicationBuilder().token(BOT_TOKEN).post_init(on_startup).build() # type: ignore
 
     app.add_handler(CommandHandler("start", start))
+    app.add_handler(CallbackQueryHandler(set_language, pattern="^lang:"))
 
     logger.info("Bot started")
     app.run_polling()

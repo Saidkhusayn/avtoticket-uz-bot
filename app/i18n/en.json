@@ -3,5 +3,8 @@
   "start.choose_language": "Choose your language",
   "button.confirm": "Confirm",
   "button.cancel": "Cancel",
-  "error.generic": "Something went wrong"
+  "error.generic": "Something went wrong",
+  "button.english": "English",
+  "button.uzbek": "Uzbek",
+  "button.russian": "Russian"
 }
