@@ -2,6 +2,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 from services.cache import get_locations
 from app.core.i18n import get_lang, t
+from app.handlers.select_to import show_to_location
 
 
 async def show_from_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -10,9 +11,10 @@ async def show_from_location(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
     keyboard = [
             [InlineKeyboardButton(
-                text=loc["names"][lang],
+                text=loc["names"].get(lang, loc["names"].get("uz", list(loc["names"].values())[0])),
                 callback_data=f"from_location:{code}")]
                 for code, loc in locations.items()
+                if loc.get("can_depart")
         ]
 
     if update.effective_message:
@@ -27,44 +29,46 @@ async def handle_from_location(update: Update, context: ContextTypes.DEFAULT_TYP
         return
 
     await query.answer()
-    lang = get_lang(update, context)
+    # lang = get_lang(update, context)
 
     location_code = query.data.split(":", 1)[1] # type: ignore
     context.user_data["from_location"] = location_code # type: ignore
 
-    await query.edit_message_text(
-        t(lang, "select.departure.station")
-    )
+    await show_from_station(update, context, edit=True)
 
-    await show_from_station(update, context)
-
-async def show_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def show_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     lang = get_lang(update, context)
-
     location_code = str(context.user_data["from_location"])  # type: ignore
 
     locations = get_locations().get("locations", {})
     location = locations.get(location_code)
-
     if not location:
-    # optional: handle error nicely
-        if update.effective_message:
-            await update.effective_message.reply_text("Location not found 🤔")
         return
 
-    stations = location.get("stations", {})
-
     keyboard = [
-            [InlineKeyboardButton(
-                text=stn.get(lang, stn.get("uz", list(stn.values())[0])),
-                callback_data=f"from_station:{code}")]
-                for code, stn in stations.items()
-        ]
+        [InlineKeyboardButton(
+            text=stn["names"].get(lang, stn["names"].get("uz", next(iter(stn["names"].values())))),
+            callback_data=f"from_station:{code}"
+        )]
+        for code, stn in location.get("stations", {}).items()
+        if stn.get("can_depart")
+    ]
 
-    if update.effective_message:
-        await update.effective_message.reply_text( 
+    markup = InlineKeyboardMarkup(keyboard)
+
+    if edit and update.callback_query:
+        await update.callback_query.edit_message_text(
             t(lang, "select.departure.station"),
-            reply_markup=InlineKeyboardMarkup(keyboard)
-    )
-        
-    # check for can_departure flag in station data if needed
+            reply_markup=markup
+        )
+
+async def handle_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if not query:
+        return
+
+    await query.answer()
+    station_code = query.data.split(":", 1)[1]  # type: ignore
+    context.user_data["from_station"] = station_code  # type: ignore
+
+    await show_to_location(update, context, edit=True)

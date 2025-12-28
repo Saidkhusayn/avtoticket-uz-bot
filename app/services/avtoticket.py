@@ -18,8 +18,14 @@ def normalize_locations(raw: dict) -> dict:
         raise ValueError("Invalid api-locations response")
 
     data = raw["data"]
-    from_codes = {loc["code"] for loc in data["from"]["locations"]}
-    to_codes = {loc["code"] for loc in data["to"]["locations"]}
+
+    # Location-level allow lists
+    loc_from_codes = {loc["code"] for loc in data["from"]["locations"]}
+    loc_to_codes = {loc["code"] for loc in data["to"]["locations"]}
+
+    # Station-level allow lists
+    stn_from_codes = {stn["code"] for stn in data["from"]["stations"]}
+    stn_to_codes = {stn["code"] for stn in data["to"]["stations"]}
 
     normalized = {"locations": {}}
 
@@ -35,8 +41,8 @@ def normalize_locations(raw: dict) -> dict:
                 "en": loc["name_en"],
             }, 
             "stations": {},
-            "can_depart": code in from_codes,
-            "can_arrive": code in to_codes,
+            "can_depart": code in loc_from_codes,
+            "can_arrive": code in loc_to_codes,
         }
 
     # 2) Stations (nested under locations)
@@ -46,9 +52,13 @@ def normalize_locations(raw: dict) -> dict:
             continue
 
         normalized["locations"][loc_code_str]["stations"][str(stn["code"])] = {
-            "ru": stn["name_ru"],
-            "uz": stn["name_uz"],
-            "en": stn["name_en"],          
+            "names": {
+                "ru": stn["name_ru"],
+                "uz": stn["name_uz"],
+                "en": stn["name_en"],
+            },
+            "can_depart": stn["code"] in stn_from_codes,
+            "can_arrive": stn["code"] in stn_to_codes,      
         }
     
     return normalized
