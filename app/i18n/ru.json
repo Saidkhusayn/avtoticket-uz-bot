@@ -7,9 +7,9 @@
   "button.english": "Английский",
   "button.russian": "Русский",
   "button.uzbek": "Узбекский",
-  "select.departure.location": "Выберите пункт отправления",
-  "select.departure.station": "Выберите станцию отправления",
-  "select.destination.station": "Выберите станцию назначения",
-  "select.destination.location": "Выберите пункт назначения", 
-  "select.travel.date": "Выберите дату поездки"
+  "select.departure.location": "Пункт отправления:",
+  "select.departure.station": "Станцию отправления:",
+  "select.destination.station": "Станцию назначения:",
+  "select.destination.location": "Пункт назначения:",
+  "select.travel.date": "Дату поездки:"
 }

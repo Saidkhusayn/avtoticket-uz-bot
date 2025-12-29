@@ -2,8 +2,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 from datetime import date, timedelta
 from babel.dates import format_date
-
 from app.core.i18n import get_lang, t
+from app.handlers.show_summary import show_summary
 
 def format_day(d: date, lang: str) -> str:
     locale = {
@@ -63,4 +63,13 @@ async def handle_date_page(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif action == "prev":
         context.user_data["date_offset"] = max(0, offset - 7) # type: ignore
 
-    await show_dates(update, context, edit=True)
+    # await show_dates(update, context, edit=True) # why need this?
+
+async def handle_dates(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer() # type: ignore
+
+    date_str = query.data.split(":")[1] # type: ignore
+    context.user_data["selected_date"] = date_str # type: ignore
+
+    await show_summary(update, context, edit=True)

@@ -7,9 +7,9 @@
   "button.english": "Inglizcha",
   "button.russian": "Ruscha",
   "button.uzbek": "O'zbekcha",
-  "select.departure.location": "Jo‘nash manzilini tanlang",
-  "select.departure.station": "Jo‘nash bekatini tanlang",
-  "select.destination.station": "Borish bekatini tanlang",
-  "select.destination.location": "Borish manzilini tanlang",
-  "select.travel.date": "Sayohat sanasini tanlang"
+  "select.departure.location": "Jo‘nash manzili:",
+  "select.departure.station": "Jo‘nash bekati:",
+  "select.destination.station": "Borish bekati:",
+  "select.destination.location": "Borish manzili:",
+  "select.travel.date": "Sayohat sanasi:"
 }

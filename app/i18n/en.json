@@ -7,9 +7,9 @@
   "button.english": "English",
   "button.uzbek": "Uzbek",
   "button.russian": "Russian",
-  "select.departure.location": "Select departure location",
-  "select.departure.station": "Select departure station",
-  "select.destination.station": "Select destination station",
-  "select.destination.location": "Select destination location",
-  "select.travel.date": "Select travel date"
+  "select.departure.location": "Departure location:",
+  "select.departure.station": "Departure station:",
+  "select.destination.station": "Destination station:",
+  "select.destination.location": "Destination location:",
+  "select.travel.date": "Travel date:"
 }
