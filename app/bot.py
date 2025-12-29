@@ -3,7 +3,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, Application, Callba
 
 from app.core.config import BOT_TOKEN, API_LOCATIONS_URL
 from app.core.i18n import load_translations
-from services.avtoticket import fetch_locations, normalize_locations
+from services.avtoticket import fetch_locations
+from domain.locations import normalize_locations
 from services.cache import set_locations
 from app.handlers.start import show_languages, set_language
 from app.handlers.select_from import handle_from_location, handle_from_station
