@@ -10,5 +10,6 @@
   "select.departure.location": "Jo‘nash manzilini tanlang",
   "select.departure.station": "Jo‘nash bekatini tanlang",
   "select.destination.station": "Borish bekatini tanlang",
-  "select.destination.location": "Borish manzilini tanlang"
+  "select.destination.location": "Borish manzilini tanlang",
+  "select.travel.date": "Sayohat sanasini tanlang"
 }

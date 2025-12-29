@@ -10,5 +10,6 @@
   "select.departure.location": "Select departure location",
   "select.departure.station": "Select departure station",
   "select.destination.station": "Select destination station",
-  "select.destination.location": "Select destination location"
+  "select.destination.location": "Select destination location",
+  "select.travel.date": "Select travel date"
 }
