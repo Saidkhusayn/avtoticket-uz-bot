@@ -12,10 +12,10 @@ async def show_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE, e
 
     locations = get_locations() # master locations
 
-    from_location_code = str(context.user_data["from_location"])  # type: ignore
-    # exclude from_location
-    to_locations = [loc for loc in to_locations if loc["code"] != from_location_code]
-    
+    # from_location_code = str(context.user_data["from_location"])  # type: ignore
+    # # exclude from_location
+    # to_locations = [loc for loc in to_locations if loc["code"] != from_location_code]
+
     keyboard = []
     for loc in to_locations:
         code = str(loc["code"])
@@ -51,23 +51,38 @@ async def handle_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 async def show_to_station(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     lang = get_lang(update, context)
-    location_code = str(context.user_data["to_location"])  # type: ignore
+    to_location_code = str(context.user_data["to_location"])  # type: ignore
+    from_station_code = str(context.user_data["from_station"])  # type: ignore
 
-    locations = get_locations()
-    location = locations.get(location_code)
-    if not location:
-        return
+    data = context.user_data.get("routes_from_station", {}) # type: ignore
+    to_stations = data.get("to", {}).get("stations", [])
 
-    # exclude the from_station
-    from_station_code = context.user_data.get("from_station")  # type: ignore
+    master_locations = get_locations()
+
+    filtered = [
+        stn for stn in to_stations
+        if str(stn["location_code"]) == to_location_code
+           and str(stn["code"]) != from_station_code  # don't arrive at the same station
+    ]
+
+    keyboard = []
+    for stn in filtered:
+        stn_code = str(stn["code"])
+        loc_code = str(stn["location_code"])
+
+        master_loc = master_locations.get(loc_code, {})
+        master_station = master_loc["stations"].get(stn_code) if master_loc else None
+
+        if master_station: 
+            label = master_station["names"].get(lang, master_station["names"].get("uz"))
+        else:
+            label = stn.get(f"name_{lang}", stn.get("name_uz"))
 
     keyboard = [
         [InlineKeyboardButton(
-            text=stn["names"].get(lang, stn["names"].get("uz", next(iter(stn["names"].values())))),
-            callback_data=f"to_station:{code}"
+            text=label,
+            callback_data=f"to_station:{stn_code}"
         )]
-        for code, stn in location.get("stations", {}).items()
-        if stn.get("can_arrive") and code != from_station_code
     ]
 
     markup = InlineKeyboardMarkup(keyboard)
