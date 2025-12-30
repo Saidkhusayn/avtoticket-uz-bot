@@ -1,7 +1,7 @@
 import logging
 from telegram.ext import ApplicationBuilder, CommandHandler, Application, CallbackQueryHandler
 
-from app.core.config import BOT_TOKEN, API_LOCATIONS_URL
+from app.core.config import BOT_TOKEN
 from app.core.i18n import load_translations
 from services.avtoticket import fetch_locations
 from domain.locations import normalize_locations
@@ -19,9 +19,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 async def on_startup(app: Application) -> None:
-    raw_data = await fetch_locations(API_LOCATIONS_URL) # type: ignore
+    raw_data = await fetch_locations()
     normalized = normalize_locations(raw_data)
-    set_locations(normalized)
+    set_locations(normalized["locations"])
     load_translations()
     print("Locations data cached and translations loaded.")
 

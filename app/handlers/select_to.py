@@ -6,20 +6,36 @@ from app.handlers.select_date import show_dates
 
 async def show_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     lang = get_lang(update, context)
-    locations = get_locations().get("locations", {})
+    
+    data = context.user_data["routes_from_station"]  # type: ignore
+    to_locations = data.get("to", {}).get("locations", [])
 
-    keyboard = [
-            [InlineKeyboardButton(
-                text=loc["names"].get(lang, loc["names"].get("uz", list(loc["names"].values())[0])),
-                callback_data=f"to_location:{code}")]
-                for code, loc in locations.items()
-                if loc.get("can_arrive")
-        ]
+    locations = get_locations() # master locations
+
+    from_location_code = str(context.user_data["from_location"])  # type: ignore
+    # exclude from_location
+    to_locations = [loc for loc in to_locations if loc["code"] != from_location_code]
+    
+    keyboard = []
+    for loc in to_locations:
+        code = str(loc["code"])
+        location_code = locations.get(code, {})
+        if location_code:
+            label = location_code["names"].get(lang, location_code["names"].get("uz"))
+        else:
+            label = loc.get(f"name_{lang}", loc.get("name_uz"))
+        
+        keyboard.append([InlineKeyboardButton(
+            text=label,
+            callback_data=f"to_location:{code}"
+        )])
+
+    markup = InlineKeyboardMarkup(keyboard)
 
     if edit and update.callback_query:
         await update.callback_query.edit_message_text(
             t(lang, "select.destination.location"),
-            reply_markup=InlineKeyboardMarkup(keyboard)
+            reply_markup=markup
         )
 
 async def handle_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -37,7 +53,7 @@ async def show_to_station(update: Update, context: ContextTypes.DEFAULT_TYPE, ed
     lang = get_lang(update, context)
     location_code = str(context.user_data["to_location"])  # type: ignore
 
-    locations = get_locations().get("locations", {})
+    locations = get_locations()
     location = locations.get(location_code)
     if not location:
         return

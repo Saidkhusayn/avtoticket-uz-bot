@@ -3,10 +3,11 @@ from telegram.ext import ContextTypes
 from services.cache import get_locations
 from app.core.i18n import get_lang, t
 from app.handlers.select_to import show_to_location
+from app.services.avtoticket import ensure_station_routes
 
 
 async def show_from_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    locations = get_locations().get("locations", {})
+    locations = get_locations()
     lang = get_lang(update, context)
 
     keyboard = [
@@ -29,7 +30,6 @@ async def handle_from_location(update: Update, context: ContextTypes.DEFAULT_TYP
         return
 
     await query.answer()
-    # lang = get_lang(update, context)
 
     location_code = query.data.split(":", 1)[1] # type: ignore
     context.user_data["from_location"] = location_code # type: ignore
@@ -40,7 +40,7 @@ async def show_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE, 
     lang = get_lang(update, context)
     location_code = str(context.user_data["from_location"])  # type: ignore
 
-    locations = get_locations().get("locations", {})
+    locations = get_locations()
     location = locations.get(location_code)
     if not location:
         return
@@ -68,7 +68,11 @@ async def handle_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE
         return
 
     await query.answer()
+
     station_code = query.data.split(":", 1)[1]  # type: ignore
     context.user_data["from_station"] = station_code  # type: ignore
+
+    routes_data = await ensure_station_routes(station_code)
+    context.user_data["routes_from_station"] = routes_data # type: ignore
 
     await show_to_location(update, context, edit=True)
