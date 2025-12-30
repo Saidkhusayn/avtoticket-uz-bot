@@ -5,7 +5,7 @@ from app.core.i18n import get_lang, t
 
 async def show_summary(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     lang = get_lang(update, context)
-    locations = get_locations().get("locations", {})
+    locations = get_locations()
 
     from_location_code = str(context.user_data.get("from_location", "")) # type: ignore
     to_location_code = str(context.user_data.get("to_location", "")) # type: ignore

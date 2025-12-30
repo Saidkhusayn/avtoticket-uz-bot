@@ -47,7 +47,7 @@ async def show_dates(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: b
 
     if edit and update.callback_query:
         await update.callback_query.edit_message_text(
-            t(lang, "select.date"),
+            t(lang, "select.travel.date"),
             reply_markup=markup
         )
 
