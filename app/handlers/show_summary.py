@@ -2,6 +2,7 @@ from telegram import Update
 from telegram.ext import ContextTypes
 from services.cache import get_locations
 from app.core.i18n import get_lang, t
+from app.handlers.show_trips import show_trips
 
 async def show_summary(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     lang = get_lang(update, context)
@@ -35,3 +36,5 @@ async def show_summary(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
         await update.callback_query.edit_message_text(summary_text)
     else:
         await update.message.reply_text(summary_text) # type: ignore
+    
+    await show_trips(update, context)
