@@ -71,19 +71,20 @@ async def show_to_station(update: Update, context: ContextTypes.DEFAULT_TYPE, ed
         loc_code = str(stn["location_code"])
 
         master_loc = master_locations.get(loc_code, {})
-        master_station = master_loc["stations"].get(stn_code) if master_loc else None
+        master_station = master_loc.get("stations", {}).get(stn_code)
 
         if master_station: 
             label = master_station["names"].get(lang, master_station["names"].get("uz"))
         else:
             label = stn.get(f"name_{lang}", stn.get("name_uz"))
 
-    keyboard = [
-        [InlineKeyboardButton(
-            text=label,
-            callback_data=f"to_station:{stn_code}"
-        )]
-    ]
+        keyboard.append([
+            InlineKeyboardButton(
+                text=label,
+                callback_data=f"to_station:{stn_code}"
+            )
+        ])
+    
 
     markup = InlineKeyboardMarkup(keyboard)
 
