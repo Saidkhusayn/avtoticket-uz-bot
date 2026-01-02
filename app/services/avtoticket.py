@@ -3,7 +3,7 @@ import json
 # from telegram.ext import ContextTypes
 import httpx
 from app.core.config import API_LOCATIONS_URL, API_TRIPS_URL
-from app.services.cache import get_station_routes, set_station_routes
+from app.services.cache import get_station_route, set_station_route
 
 
 async def fetch_locations() -> dict:
@@ -29,8 +29,6 @@ async def get_trips_data(from_station: str, to_station: str, date: str, days: in
         }
         response = await client.post(API_TRIPS_URL, json=payload) # type: ignore
         response.raise_for_status()
-        # with open("app/data/trips_response.json", "w", encoding="utf-8") as f:
-        #     json.dump(response.json(), f, indent=2, ensure_ascii=False)
         return response.json()
 
 async def ensure_station_routes(station_code: str) -> dict:
@@ -44,17 +42,15 @@ async def ensure_station_routes(station_code: str) -> dict:
       "apis": [...]
     }
     """
-    cached = get_station_routes(station_code)
+    cached = get_station_route(station_code)
     if cached is not None:
         return cached 
 
     raw = await fetch_station_routes(station_code)
-
     if not raw.get("success"):
         raise ValueError(f"Invalid station routes response for {station_code}")
 
     data = raw["data"]
-
-    set_station_routes(station_code, data)  # cache data-only
+    set_station_route(station_code, data)  # cache data-only
 
     return data

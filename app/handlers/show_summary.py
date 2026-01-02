@@ -1,12 +1,12 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from services.cache import get_locations
+from app.services.cache import get_cache
 from app.core.i18n import get_lang, t
 from app.handlers.show_trips import show_trips
 
 async def show_summary(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     lang = get_lang(update, context)
-    locations = get_locations()
+    locations = get_cache("master_locations", {})
 
     from_location_code = str(context.user_data.get("from_location", "")) # type: ignore
     to_location_code = str(context.user_data.get("to_location", "")) # type: ignore

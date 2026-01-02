@@ -1,13 +1,13 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
-from services.cache import get_locations
+from app.services.cache import get_cache
 from app.core.i18n import get_lang, t
 from app.handlers.select_to import show_to_location
 from app.services.avtoticket import ensure_station_routes
 
 
 async def show_from_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    locations = get_locations()
+    locations = get_cache("master_locations", {})
     lang = get_lang(update, context)
 
     keyboard = [
@@ -40,7 +40,7 @@ async def show_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE, 
     lang = get_lang(update, context)
     location_code = str(context.user_data["from_location"])  # type: ignore
 
-    locations = get_locations()
+    locations = get_cache("master_locations", {})
     location = locations.get(location_code)
     if not location:
         return

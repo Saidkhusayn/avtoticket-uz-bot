@@ -1,6 +1,6 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
-from services.cache import get_locations
+from app.services.cache import get_cache
 from app.core.i18n import get_lang, t
 from app.handlers.select_date import show_dates
 
@@ -10,7 +10,7 @@ async def show_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE, e
     data = context.user_data["routes_from_station"]  # type: ignore
     to_locations = data.get("to", {}).get("locations", [])
 
-    locations = get_locations() # master locations
+    locations = get_cache("master_locations", {})
 
     # from_location_code = str(context.user_data["from_location"])  # type: ignore
     # # exclude from_location
@@ -57,7 +57,7 @@ async def show_to_station(update: Update, context: ContextTypes.DEFAULT_TYPE, ed
     data = context.user_data.get("routes_from_station", {}) # type: ignore
     to_stations = data.get("to", {}).get("stations", [])
 
-    master_locations = get_locations()
+    master_locations = get_cache("master_locations", {})
 
     filtered = [
         stn for stn in to_stations

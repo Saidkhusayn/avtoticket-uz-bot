@@ -3,9 +3,9 @@ from telegram.ext import ApplicationBuilder, CommandHandler, Application, Callba
 
 from app.core.config import BOT_TOKEN
 from app.core.i18n import load_translations
-from services.avtoticket import fetch_locations
-from domain.locations import normalize_locations
-from services.cache import set_locations
+from app.services.avtoticket import fetch_locations
+from app.domain.locations import normalize_locations
+from app.services.cache import set_cache
 from app.handlers.start import show_languages, set_language
 from app.handlers.select_from import handle_from_location, handle_from_station
 from app.handlers.select_to import handle_to_location, handle_to_station
@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 async def on_startup(app: Application) -> None:
     raw_data = await fetch_locations()
     normalized = normalize_locations(raw_data)
-    set_locations(normalized["locations"])
+    set_cache("master_locations", normalized["locations"])
     load_translations()
     print("Locations data cached and translations loaded.")
 
