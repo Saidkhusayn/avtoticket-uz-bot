@@ -1,5 +1,8 @@
 cache = {}
 
+def get_full_cache() -> dict:
+    return cache
+
 def set_locations(data: dict):
     cache["locations"] = data
 
@@ -12,3 +15,10 @@ def set_station_routes(station_code: str, data: dict):
 
 def get_station_routes(station_code: str) -> dict | None:
     return cache.get("station_routes", {}).get(station_code)
+
+def set_trips(data: dict):
+    trips_cache = cache.setdefault("trips", {})
+    trips_cache["trips"] = data
+
+def get_trips() -> dict | None:
+    return cache.get("trips", {}).get("trips")

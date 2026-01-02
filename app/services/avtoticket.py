@@ -19,7 +19,7 @@ async def fetch_station_routes(station_code: str | int) -> dict:
         response.raise_for_status()
         return response.json()
 
-async def get_trips(from_station: str, to_station: str, date: str, days: int = 3) -> dict:
+async def get_trips_data(from_station: str, to_station: str, date: str, days: int = 3) -> dict:
     async with httpx.AsyncClient() as client:
         payload = {
             "from": from_station,
@@ -29,8 +29,8 @@ async def get_trips(from_station: str, to_station: str, date: str, days: int = 3
         }
         response = await client.post(API_TRIPS_URL, json=payload) # type: ignore
         response.raise_for_status()
-        with open("app/data/trips_response.json", "w", encoding="utf-8") as f:
-            json.dump(response.json(), f, indent=2, ensure_ascii=False)
+        # with open("app/data/trips_response.json", "w", encoding="utf-8") as f:
+        #     json.dump(response.json(), f, indent=2, ensure_ascii=False)
         return response.json()
 
 async def ensure_station_routes(station_code: str) -> dict:
