@@ -10,7 +10,7 @@ from app.handlers.start import show_languages, set_language
 from app.handlers.select_from import handle_from_location, handle_from_station
 from app.handlers.select_to import handle_to_location, handle_to_station
 from app.handlers.select_date import handle_date_page, handle_dates
-from app.handlers.show_trips import handle_trips_page
+from app.handlers.show_trips import handle_trips_page, handle_trip
 
 # LOGGING (module-level is fine)
 logging.basicConfig(
@@ -47,6 +47,7 @@ def run_bot() -> None:
 
     # SHOW TRIPS HANDLERS
     app.add_handler(CallbackQueryHandler(handle_trips_page, pattern="^trips_page:"))
+    app.add_handler(CallbackQueryHandler(handle_trip, pattern="^trip:"))
 
     logger.info("Bot started")
     app.run_polling()

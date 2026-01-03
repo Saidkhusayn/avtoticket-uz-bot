@@ -58,17 +58,13 @@ def _build_flat_trips_window(days: list[dict], selected_date: str) -> tuple[list
 async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     """
     Renders from cached trips in user_data. NO API calls here.
-    Requires:
-      context.user_data["trips_days"] = trips_resp["data"]
-      context.user_data["selected_date"] = "YYYY-MM-DD"
-      context.user_data["trips_offset"] = int
     """
     lang = get_lang(update, context)
     selected_date = str(context.user_data.get("selected_date"))  # type: ignore
     days = context.user_data.get("trips_days", [])  # type: ignore
 
     if not days or not selected_date:
-        msg = t(lang, "trips.none_found") if "trips.none_found" else "No trips found."
+        msg = t(lang, "trips.none_found")
         if edit and update.callback_query:
             await update.callback_query.edit_message_text(msg)
         elif update.effective_message:
@@ -77,6 +73,9 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
 
     flat_trips, date_used, sel_count = _build_flat_trips_window(days, selected_date)
     context.user_data["flat_trips"] = flat_trips  # type: ignore
+    with open("app/data/flat_trips.json", "w", encoding="utf-8") as f:
+        import json
+        json.dump(flat_trips, f, indent=4, ensure_ascii=False)
 
     total = len(flat_trips)
     if total == 0:
@@ -96,9 +95,6 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
     lines: list[str] = []
     lines.append(f"<b>🚌 {_safe(t(lang, 'trips.available')) if 'trips.available' else 'Available trips'}</b>")
 
-    if sel_count < 3:
-        lines.append(f"<i>{_safe(selected_date)} has < 3 trips → showing nearby days too</i>")
-
     lines.append("")
     lines.append("<b>📅 Day:</b> " + " | ".join(
         [f"<u>{_safe(d)}</u>" if d == selected_date else _safe(d) for d in date_used]
@@ -108,7 +104,7 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
     buttons: list[list[InlineKeyboardButton]] = []
 
     for i, trip in enumerate(page, start=offset + 1):
-        d = trip.get("_day", selected_date)
+        # d = trip.get("_day", selected_date)
         dep = _fmt_time(trip.get("departure_at", ""))
         arr = _fmt_time(trip.get("arrive_at", ""))
         route = _safe(_pick_route_name(trip, lang))
@@ -129,7 +125,6 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
             line1 += f"  |  🎟 {seats_left}"
 
         lines.append(line1)
-        # lines.append(f"   📅 {_safe(d)}")
         lines.append(f"  📍 {_safe(route)}")
         lines.append(f"   🚌 {bus}")
         lines.append("")
@@ -195,3 +190,39 @@ async def handle_trips_page(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     context.user_data["trips_offset"] = offset  # type: ignore
     await render_trips(update, context, edit=True)
+
+async def handle_trip(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if not query:
+        return
+
+    await query.answer()
+    lang = get_lang(update, context)
+    trip_index = int(query.data.split(":", 1)[1]) - 1  # type: ignore
+    flat_trips = context.user_data.get("flat_trips", [])  # type: ignore
+    trip = flat_trips[trip_index]
+    selected_date = context.user_data.get("selected_date", "")  # type: ignore
+
+    context.user_data["selected_trip"] = trip # type: ignore
+
+    d = trip.get("_day", selected_date)
+    dep = _fmt_time(trip.get("departure_at", ""))
+    arr = _fmt_time(trip.get("arrive_at", ""))
+    route = _safe(_pick_route_name(trip, lang))
+    bus = _safe(trip.get("bus_model_name") or "-")
+    price = _money_uzs(trip.get("price"))
+
+    lines: list[str] = []
+    selected_bus_title = t(lang, "selected.bus")
+    lines.append(f"{selected_bus_title}\n\n")
+
+    line1 = f"<b>{_safe(d)}</b>  |  <b>{_safe(dep)} → {_safe(arr)}</b>  |  <b>{_safe(price)}</b> so'm"
+
+    lines.append(line1)
+    lines.append(f"  📍 {_safe(route)}")
+    lines.append(f"   🚌 {bus}")
+    lines.append("")
+
+    text = "\n".join(lines)
+
+    await query.edit_message_text(text, parse_mode=ParseMode.HTML)

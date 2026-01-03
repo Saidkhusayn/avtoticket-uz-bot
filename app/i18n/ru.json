@@ -12,5 +12,7 @@
   "select.destination.station": "Станцию назначения:",
   "select.destination.location": "Пункт назначения:",
   "select.travel.date": "Дату поездки:",
-  "trips.none_found": "Поездки не найдены. Пожалуйста, попробуйте другую дату"
+  "trips.none_found": "Поездки не найдены. Пожалуйста, попробуйте другую дату",
+  "trips.available": "Доступные автобусы:",
+  "selected.bus": "Выбранный автобус:"
 }
