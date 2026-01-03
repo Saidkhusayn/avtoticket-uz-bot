@@ -11,5 +11,6 @@
   "select.departure.station": "Jo‘nash bekati:",
   "select.destination.station": "Borish bekati:",
   "select.destination.location": "Borish manzili:",
-  "select.travel.date": "Sayohat sanasi:"
+  "select.travel.date": "Sayohat sanasi:",
+  "trips.none_found": "Sayohatlar topilmadi. Iltimos, boshqa sanadan qidiring"
 }

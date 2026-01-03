@@ -63,7 +63,7 @@ async def handle_date_page(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif action == "prev":
         context.user_data["date_offset"] = max(0, offset - 7) # type: ignore
 
-    # await show_dates(update, context, edit=True) # why need this?
+    await show_dates(update, context, edit=True)
 
 async def handle_dates(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query

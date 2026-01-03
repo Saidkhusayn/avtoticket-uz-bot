@@ -11,5 +11,6 @@
   "select.departure.station": "Departure station:",
   "select.destination.station": "Destination station:",
   "select.destination.location": "Destination location:",
-  "select.travel.date": "Travel date:"
+  "select.travel.date": "Travel date:",
+  "trips.none_found": "No trips found. Please try another date"
 }
