@@ -6,6 +6,7 @@ from telegram.ext import ContextTypes
 
 from app.core.i18n import get_lang, t
 from app.services.avtoticket import get_trips_data
+from app.services.cache import get_full_cache
 
 PAGE_SIZE = 5
 
@@ -151,6 +152,10 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
 
 
 async def show_trips(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    cache = get_full_cache()
+    with open("app/data/cache_1.json", "w", encoding="utf-8") as f:
+        import json
+        json.dump(cache, f, indent=4, ensure_ascii=False)
     """
     Fetches trips ONCE per (from_station, to_station, selected_date),
     stores in user_data, then renders.
@@ -214,7 +219,7 @@ async def handle_trip(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     lines: list[str] = []
     selected_bus_title = t(lang, "selected.bus")
-    lines.append(f"{selected_bus_title}\n\n")
+    lines.append(f"{selected_bus_title}\n")
 
     line1 = f"<b>{_safe(d)}</b>  |  <b>{_safe(dep)} → {_safe(arr)}</b>  |  <b>{_safe(price)}</b> so'm"
 
@@ -225,4 +230,20 @@ async def handle_trip(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = "\n".join(lines)
 
-    await query.edit_message_text(text, parse_mode=ParseMode.HTML)
+    markup = InlineKeyboardMarkup([
+    [InlineKeyboardButton("🔔 Track seats", callback_data="track_trip")],
+    # [InlineKeyboardButton("🛑 Stop tracking", callback_data="stop_track_btn")]
+])
+
+    await query.edit_message_text(text, parse_mode=ParseMode.HTML, reply_markup=markup)
+
+
+# TODO: move to track_trip
+# async def stop_track_btn(update: Update, context: ContextTypes.DEFAULT_TYPE):
+#     query = update.callback_query
+#     if not query:
+#         return
+#     await query.answer()
+#     # reuse the command logic
+#     from app.handlers.track_trip import stop_tracking
+#     await stop_tracking(update, context)

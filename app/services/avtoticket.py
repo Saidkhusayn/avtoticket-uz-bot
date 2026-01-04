@@ -2,7 +2,7 @@
 import json
 # from telegram.ext import ContextTypes
 import httpx
-from app.core.config import API_LOCATIONS_URL, API_TRIPS_URL
+from app.core.config import API_LOCATIONS_URL, API_TRIPS_URL, API_BUS_URL
 from app.services.cache import get_station_route, set_station_route
 
 
@@ -30,6 +30,13 @@ async def get_trips_data(from_station: str, to_station: str, date: str, days: in
         response = await client.post(API_TRIPS_URL, json=payload) # type: ignore
         response.raise_for_status()
         return response.json()
+
+async def fetch_bus_seats(api_url: str, from_id: int | str, to_id: int | str, trip_id: int | str) -> dict:
+    url = f"{api_url}/api/bus/{from_id}/{to_id}/{trip_id}"
+    async with httpx.AsyncClient(timeout=20) as client:
+        resp = await client.get(url)
+        resp.raise_for_status()
+        return resp.json()
 
 async def ensure_station_routes(station_code: str) -> dict:
     """

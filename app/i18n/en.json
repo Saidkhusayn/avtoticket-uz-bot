@@ -14,5 +14,8 @@
   "select.travel.date": "Travel date:",
   "trips.none_found": "No trips found. Please try another date",
   "trips.available": "Available buses:",
-  "selected.bus": "Selected bus:"
+  "selected.bus": "Selected bus:",
+  "track.started": "✅ Tracking started.\nUse /stop_tracking to stop.",
+  "track.stopped": "🛑 Tracking stopped.",
+  "track.no_seats": "❌ This trip has no seats left. Tracking not started."
 }
