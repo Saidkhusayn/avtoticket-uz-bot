@@ -22,13 +22,13 @@ async def show_summary(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
 
     summary_text = (
         f"{t(lang, 'select.departure.location')} "
-        f"{from_location.get('names', {}).get(lang, from_location.get('names', {}).get('uz', ''))}\n"
+        f"{from_location.get('names', {}).get(lang, from_location.get('names', {}).get('uz', ''))}✅\n"
         f"{t(lang, 'select.departure.station')} "
-        f"{from_station.get('names', {}).get(lang, from_station.get('names', {}).get('uz', ''))}\n\n"
+        f"{from_station.get('names', {}).get(lang, from_station.get('names', {}).get('uz', ''))}✅\n\n"
         f"{t(lang, 'select.destination.location')} "
-        f"{to_location.get('names', {}).get(lang, to_location.get('names', {}).get('uz', ''))}\n"
+        f"{to_location.get('names', {}).get(lang, to_location.get('names', {}).get('uz', ''))}✅\n"
         f"{t(lang, 'select.destination.station')} "
-        f"{to_station.get('names', {}).get(lang, to_station.get('names', {}).get('uz', ''))}\n\n"
+        f"{to_station.get('names', {}).get(lang, to_station.get('names', {}).get('uz', ''))}✅\n\n"
         f"{t(lang, 'select.travel.date')} {travel_date}"
     )
 

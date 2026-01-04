@@ -94,7 +94,7 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
     page = flat_trips[offset: offset + PAGE_SIZE]
 
     lines: list[str] = []
-    lines.append(f"<b>🚌 {_safe(t(lang, 'trips.available')) if 'trips.available' else 'Available trips'}</b>")
+    lines.append(f"<b>{_safe(t(lang, 'trips.available'))}</b>")
 
     lines.append("")
     lines.append("<b>📅 Day:</b> " + " | ".join(
@@ -152,10 +152,6 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
 
 
 async def show_trips(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    cache = get_full_cache()
-    with open("app/data/cache_1.json", "w", encoding="utf-8") as f:
-        import json
-        json.dump(cache, f, indent=4, ensure_ascii=False)
     """
     Fetches trips ONCE per (from_station, to_station, selected_date),
     stores in user_data, then renders.
@@ -218,8 +214,6 @@ async def handle_trip(update: Update, context: ContextTypes.DEFAULT_TYPE):
     price = _money_uzs(trip.get("price"))
 
     lines: list[str] = []
-    # selected_bus_title = t(lang, "selected.bus")
-    # lines.append(f"{selected_bus_title}\n")
 
     line1 = f"<b>{_safe(d)}</b>  |  <b>{_safe(dep)} → {_safe(arr)}</b>  |  <b>{_safe(price)}</b> so'm"
 
