@@ -7,7 +7,7 @@ from app.services.avtoticket import fetch_locations
 from app.domain.locations import normalize_locations
 from app.services.cache import set_cache
 from app.handlers.start import show_languages, set_language
-from app.handlers.select_from import handle_from_location, handle_from_station
+from app.handlers.select_from import handle_from_location, handle_from_station, show_from_location
 from app.handlers.select_to import handle_to_location, handle_to_station
 from app.handlers.select_date import handle_date_page, handle_dates
 from app.handlers.show_trips import handle_trips_page, handle_trip
@@ -34,6 +34,9 @@ def run_bot() -> None:
     # SETUP HANDLERS
     app.add_handler(CommandHandler("start", show_languages))
     app.add_handler(CallbackQueryHandler(set_language, pattern="^lang:"))
+
+    #NEW TRIP COMMAND
+    app.add_handler(CommandHandler(("new_trip"), show_from_location))
     
     # SELECT FROM HANDLERS
     app.add_handler(CallbackQueryHandler(handle_from_location, pattern="^from_location:"))

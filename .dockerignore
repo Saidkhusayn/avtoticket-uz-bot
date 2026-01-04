@@ -1,0 +1,9 @@
+.env
+.DS_Store
+venv/
+__pycache__/
+*.pyc
+app/data/
+.pytest_cache/
+tg_bot.egg-info/
+*.egg-info/

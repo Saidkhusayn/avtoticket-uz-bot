@@ -4,3 +4,4 @@ httpx
 pytest
 pytest-asyncio
 babel
+python-telegram-bot[job-queue]

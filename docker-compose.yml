@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  tg-bot:
+    build: .
+    container_name: tg-bot
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    restart: always
+    networks:
+      - bot-network
+
+networks:
+  bot-network:
+    driver: bridge
