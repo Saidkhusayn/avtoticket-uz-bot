@@ -99,7 +99,7 @@ async def start_tracking(update: Update, context: ContextTypes.DEFAULT_TYPE):
     to_id = trip.get("to_id")
     trip_api_id = trip.get("api_id")
 
-    apis = get_cache("apis", []) ########################
+    apis = get_cache("apis", [])
     api_obj = apis[trip_api_id]
     if api_obj and api_obj.get("id") == trip_api_id:
         api_url = api_obj.get("url")
@@ -111,7 +111,7 @@ async def start_tracking(update: Update, context: ContextTypes.DEFAULT_TYPE):
     removed = _remove_existing_job(context, chat_id)
 
     # thresholds to notify once when free seats become <= threshold
-    thresholds = [40, 30, 20, 10, 5, 3, 2, 1]
+    thresholds = [30, 20, 10, 5, 3, 2, 1]
 
     job_data: dict[str, Any] = {
         "chat_id": chat_id,
@@ -145,14 +145,17 @@ async def start_tracking(update: Update, context: ContextTypes.DEFAULT_TYPE):
         data=job_data,
     )
 
+    selected_trip_text = context.user_data.get("selected_trip_text", "")  # type: ignore
+
     # Immediate user feedback
     start_msg = (
-        f"✅ Tracking started.\n"
+        f"✅ Tracking started for:\n\n"
+        f"{selected_trip_text}\n"
         f"{'♻️ Replaced previous tracking.' if removed else ''}\n"
-        f"⏱ Check every {interval_seconds}s.\n"
+        f"⏰ Check every {interval_seconds}s.\n"
         f"Use /stop_tracking to stop."
     )
-    await query.edit_message_text(start_msg)
+    await query.edit_message_text(start_msg, parse_mode=ParseMode.HTML)
 
 
 async def stop_tracking(update: Update, context: ContextTypes.DEFAULT_TYPE):

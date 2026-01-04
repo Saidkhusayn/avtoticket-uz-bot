@@ -218,8 +218,8 @@ async def handle_trip(update: Update, context: ContextTypes.DEFAULT_TYPE):
     price = _money_uzs(trip.get("price"))
 
     lines: list[str] = []
-    selected_bus_title = t(lang, "selected.bus")
-    lines.append(f"{selected_bus_title}\n")
+    # selected_bus_title = t(lang, "selected.bus")
+    # lines.append(f"{selected_bus_title}\n")
 
     line1 = f"<b>{_safe(d)}</b>  |  <b>{_safe(dep)} → {_safe(arr)}</b>  |  <b>{_safe(price)}</b> so'm"
 
@@ -230,20 +230,10 @@ async def handle_trip(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = "\n".join(lines)
 
+    context.user_data["selected_trip_text"] = text # type: ignore
+
     markup = InlineKeyboardMarkup([
-    [InlineKeyboardButton("🔔 Track seats", callback_data="track_trip")],
-    # [InlineKeyboardButton("🛑 Stop tracking", callback_data="stop_track_btn")]
+    [InlineKeyboardButton("🔔 Track seats", callback_data="track_trip")]
 ])
 
     await query.edit_message_text(text, parse_mode=ParseMode.HTML, reply_markup=markup)
-
-
-# TODO: move to track_trip
-# async def stop_track_btn(update: Update, context: ContextTypes.DEFAULT_TYPE):
-#     query = update.callback_query
-#     if not query:
-#         return
-#     await query.answer()
-#     # reuse the command logic
-#     from app.handlers.track_trip import stop_tracking
-#     await stop_tracking(update, context)
