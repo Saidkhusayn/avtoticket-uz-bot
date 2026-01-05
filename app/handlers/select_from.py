@@ -24,6 +24,11 @@ async def show_from_location(update: Update, context: ContextTypes.DEFAULT_TYPE)
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
 
+    elif update.callback_query and not keyboard:
+        await update.callback_query.edit_message_text(
+            t(lang, "departure.not.found")
+        )
+
 async def handle_from_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if not query:
@@ -60,6 +65,11 @@ async def show_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE, 
         await update.callback_query.edit_message_text(
             t(lang, "select.departure.station"),
             reply_markup=markup
+        )
+    
+    elif update.callback_query and not keyboard:
+        await update.callback_query.edit_message_text(
+            t(lang, "departure.not.found")
         )
 
 async def handle_from_station(update: Update, context: ContextTypes.DEFAULT_TYPE):

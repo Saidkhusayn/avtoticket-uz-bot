@@ -11,6 +11,8 @@
   "select.departure.station": "Jo'nash hududi:",
   "select.destination.station": "Borish hududi:",
   "select.destination.location": "Borish manzili:",
+  "destination.not.found": "Hech qanday borish manzili topilmadi. Iltimos, boshqa manzilni tanlang.",
+  "departure.not.found": "Hech qanday jo'nash manzili topilmadi. Iltimos, boshqa manzilni tanlang.",
   "select.travel.date": "📅 Sayohat sanasi:",
   "trips.none_found": "⚠️ Sayohatlar topilmadi. Iltimos, boshqa sanadan qidiring",
   "trips.available": "🚌 Mavjud avtobuslar:",

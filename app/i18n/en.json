@@ -9,6 +9,8 @@
   "select.departure.station": "Departure region:",
   "select.destination.station": "Destination region:",
   "select.destination.location": "Destination location:",
+  "destination.not.found": "No destination found. Please try another location",
+  "departure.not.found": "No departure found. Please try another location",
   "select.travel.date": "📅 Travel date:",
   "trips.none_found": "⚠️ No trips found. Please try another date",
   "trips.available": "🚌 Available buses:",

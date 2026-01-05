@@ -38,6 +38,11 @@ async def show_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE, e
             reply_markup=markup
         )
 
+    elif edit and update.callback_query and not keyboard:
+        await update.callback_query.edit_message_text(
+            t(lang, "destination.not.found")
+        )
+
 async def handle_to_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if not query:
@@ -88,10 +93,14 @@ async def show_to_station(update: Update, context: ContextTypes.DEFAULT_TYPE, ed
 
     markup = InlineKeyboardMarkup(keyboard)
 
-    if edit and update.callback_query:
+    if edit and update.callback_query and keyboard:
         await update.callback_query.edit_message_text(
             t(lang, "select.destination.station"),
             reply_markup=markup
+        )
+    elif edit and update.callback_query and not keyboard:
+        await update.callback_query.edit_message_text(
+            t(lang, "destination.not.found")
         )
 
 async def handle_to_station(update: Update, context: ContextTypes.DEFAULT_TYPE):
