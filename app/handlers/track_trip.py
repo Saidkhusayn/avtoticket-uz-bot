@@ -111,7 +111,7 @@ async def start_tracking(update: Update, context: ContextTypes.DEFAULT_TYPE):
     removed = _remove_existing_job(context, chat_id)
 
     # thresholds to notify once when free seats become <= threshold
-    thresholds = [30, 20, 10, 5, 3, 2, 1]
+    thresholds = [40, 30, 20, 10, 5, 4, 3, 2, 1]
 
     job_data: dict[str, Any] = {
         "chat_id": chat_id,
@@ -217,6 +217,11 @@ async def _poll_trip_seats(context: ContextTypes.DEFAULT_TYPE):
                 parse_mode=ParseMode.HTML,
             )
 
+        # On first poll, mark all thresholds ABOVE current free seats as already notified
+            for th in thresholds:
+                if free < th:  # If current seats are already BELOW this threshold
+                    already_notified.add(th)
+
         # Notify when crossing thresholds
         for th in thresholds:
             if free <= th and th not in already_notified:
@@ -228,6 +233,8 @@ async def _poll_trip_seats(context: ContextTypes.DEFAULT_TYPE):
                 )
                 await context.bot.send_message(chat_id=chat_id, text=text, parse_mode=ParseMode.HTML)
 
+                break # Only notify for the highest newly-crossed threshold per poll
+            
         # Sold out => notify and stop
         if free <= 0:
             await context.bot.send_message(

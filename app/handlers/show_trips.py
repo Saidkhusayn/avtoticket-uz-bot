@@ -94,7 +94,7 @@ async def render_trips(update: Update, context: ContextTypes.DEFAULT_TYPE, edit:
     page = flat_trips[offset: offset + PAGE_SIZE]
 
     lines: list[str] = []
-    lines.append(f"<b>{_safe(t(lang, 'trips.available'))}</b>")
+    lines.append(f"<b>{_safe(t(lang, 'trips.available'))}</b>") #####
 
     lines.append("")
     lines.append("<b>📅 Day:</b> " + " | ".join(
