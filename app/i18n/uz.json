@@ -17,7 +17,12 @@
   "trips.none_found": "⚠️ Sayohatlar topilmadi. Iltimos, boshqa sanadan qidiring",
   "trips.available": "🚌 Mavjud avtobuslar:",
   "selected.bus": "Tanlangan avtobus:",
-  "track.started": "✅ Ko'zatish boshlandi.\nKo'zatishni o'chirish uchun /stop_tracking tugmasini bosing.",
+  "track.started": "✅ Ko'zatish boshlandi...",
   "track.stopped": "🛑 Ko'zatish o'chirildi.",
-  "track.no_seats": "❌ Ushbu sayohatda bo'sh joylar mavjud emas. Ko'zatish boshlanmadi."
+  "track.no_seats": "❌ Ushbu sayohatda bo'sh joylar mavjud emas. Ko'zatish boshlanmadi.",
+  "track.instructions": "⏰ Bo'sh o'rindiqlar soni haqida sizga xabar yubirib turiladi. \n Ko'zatishni o'chirish uchun: /stop_tracking",
+  "tracking.active": "📍 Ko'zatish faol",
+  "seats.updated": "🔔 Joylar o'zgartirildi",
+  "free.seats": "Bo'sh joylar soni:",
+  "free.seats.left": "⚠️ Qolgan bo'sh o'rindiqlar soni:"
 }

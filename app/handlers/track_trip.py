@@ -149,11 +149,10 @@ async def start_tracking(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Immediate user feedback
     start_msg = (
-        f"✅ Tracking started for:\n\n"
+        f"{t(lang, 'track.started')}\n\n"
         f"{selected_trip_text}\n"
         f"{'♻️ Replaced previous tracking.' if removed else ''}\n"
-        f"⏰ Check every {interval_seconds}s.\n"
-        f"Use /stop_tracking to stop."
+        f"{t(lang, 'track.instructions')}"
     )
     await query.edit_message_text(start_msg, parse_mode=ParseMode.HTML)
 
@@ -188,6 +187,7 @@ async def _poll_trip_seats(context: ContextTypes.DEFAULT_TYPE):
     trip_id = data.get("trip_id") # type: ignore
     from_id = data.get("from_id") # type: ignore
     to_id = data.get("to_id") # type: ignore
+    lang = data.get("lang") # type: ignore
     api = str(data.get("api")) if data.get("api") else "" # type: ignore
     thresholds = data.get("thresholds", []) # type: ignore
     already_notified: set[int] = data.get("already_notified", set()) # type: ignore
@@ -213,7 +213,7 @@ async def _poll_trip_seats(context: ContextTypes.DEFAULT_TYPE):
         if last_free is None:
             await context.bot.send_message(
                 chat_id=chat_id,
-                text=f"📍 Tracking active\nFree seats: <b>{free}</b> / {total}",
+                text=f"{t(lang, 'tracking.active')}\n{t(lang, 'free.seats')} <b>{free}</b> / {total}", # type: ignore
                 parse_mode=ParseMode.HTML,
             )
 
@@ -227,14 +227,13 @@ async def _poll_trip_seats(context: ContextTypes.DEFAULT_TYPE):
             if free <= th and th not in already_notified:
                 already_notified.add(th)
                 text = (
-                    f"🔔 <b>Seats update</b>\n"
-                    f"Free seats: <b>{free}</b> / {total}\n"
-                    f"⚠️ Now ≤ <b>{th}</b> seats."
+                    f"{t(lang, 'seats.update')}\n" # type: ignore
+                    f"{t(lang, 'free.seats.left')} <b>{free}</b> / {total}\n" # type: ignore
                 )
                 await context.bot.send_message(chat_id=chat_id, text=text, parse_mode=ParseMode.HTML)
 
                 break # Only notify for the highest newly-crossed threshold per poll
-            
+
         # Sold out => notify and stop
         if free <= 0:
             await context.bot.send_message(

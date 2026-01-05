@@ -15,7 +15,13 @@
   "trips.none_found": "⚠️ No trips found. Please try another date",
   "trips.available": "🚌 Available buses:",
   "selected.bus": "Selected bus:",
-  "track.started": "✅ Tracking started.\nUse /stop_tracking to stop.",
+  "track.started": "✅ Tracking started...",
   "track.stopped": "🛑 Tracking stopped.",
-  "track.no_seats": "❌ This trip has no seats left. Tracking not started."
+  "track.no_seats": "❌ This trip has no seats left. Tracking not started.",
+  "track.instructions": "⏰ Notifies when the free seat numbers change. \n To stop tracking, use /stop_tracking",
+  "tracking.active": "📍 Tracking active",
+  "seats.updated": "🔔 Seats update",
+  "free.seats": "Free seats:",
+  "free.seats.left": "⚠️ Free seats left:"
+  
 }
